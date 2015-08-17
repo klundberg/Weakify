@@ -1,6 +1,7 @@
 # references:
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
+osx_image: xcode6.4
 
 language: objective-c
 before_install:
