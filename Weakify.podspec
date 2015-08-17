@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Weakify"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "A set of functions that allow you to weakly apply an object to a method so that it can be used without causing memory leaks."
 
   s.description      = <<-DESC
