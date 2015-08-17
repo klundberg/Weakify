@@ -1,15 +1,18 @@
 # Weakify
 
-[![CI Status](http://img.shields.io/travis/Kevin Lundberg/Weakify.svg?style=flat)](https://travis-ci.org/Kevin Lundberg/Weakify)
+[![CI Status](http://img.shields.io/travis/klundberg/Weakify.svg?style=flat)](https://travis-ci.org/klundberg/Weakify)
 [![Version](https://img.shields.io/cocoapods/v/Weakify.svg?style=flat)](http://cocoapods.org/pods/Weakify)
 [![License](https://img.shields.io/cocoapods/l/Weakify.svg?style=flat)](http://cocoapods.org/pods/Weakify)
 [![Platform](https://img.shields.io/cocoapods/p/Weakify.svg?style=flat)](http://cocoapods.org/pods/Weakify)
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
 
 ## Requirements
+
+* Xcode 6.3+/Swift 1.2
+* iOS 8/OS X 10.9
 
 ## Installation
 
@@ -22,7 +25,7 @@ pod "Weakify"
 
 ## Author
 
-Kevin Lundberg, klundberg@wayfair.com
+Kevin Lundberg, kevin@klundberg.com
 
 ## License
 
