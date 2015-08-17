@@ -6,16 +6,13 @@
 //  Copyright (c) 2015 Kevin Lundberg. All rights reserved.
 //
 
-// these functions take a swift class's statically referenced method and the instance those methods
-// should apply to, and returns a function that weakly captures the instance so that you don't have
-// to worry about memory retain cycles if you want to directly use an instance method as a handler
-// for some object, like NSNotificationCenter.
-//
-// For more information, see this post:
-// http://www.klundberg.com/blog/capturing-objects-weakly-in-instance-method-references-in-swift/
+/// May be applied to any method that takes no arguments and returns none. The resulting closure can accept an argument which will simply be ignored (useful in cases like `NSNotificationCenter` when you don't care about the `notification` argument), or the type may also represent `Void`, meaning no input arguments are necessary.
 
-
-// this one can be used in cases where U is Void as well
+///
+/// :param: owner The object to weakly apply to the given curried function or method
+/// :param: f     The function/method to weakly apply owner to as the first argument
+///
+/// :returns: A function where owner is weakly applied to the given function f. If owner is nil, nothing happens. If owner is not nil, calls f(owner)()
 public func weakify <T: AnyObject, U>(owner: T, f: T->()->()) -> U -> () {
     return { [weak owner] _ in
         if let this = owner {
@@ -24,6 +21,12 @@ public func weakify <T: AnyObject, U>(owner: T, f: T->()->()) -> U -> () {
     }
 }
 
+/// May be applied to a method that accepts an argument and returns none, which the resulting closure mirrors.
+///
+/// :param: owner The object to weakly apply to the given curried function or method
+/// :param: f     The function/method to weakly apply owner to as the first argument
+///
+/// :returns: A function where owner is weakly applied to the given function f. If owner is nil, nothing happens. If owner is not nil, calls f(owner)($0)
 public func weakify <T: AnyObject, U>(owner: T, f: T->U->()) -> U -> () {
     return { [weak owner] obj in
         if let this = owner {
@@ -32,6 +35,12 @@ public func weakify <T: AnyObject, U>(owner: T, f: T->U->()) -> U -> () {
     }
 }
 
+/// May be applied to a function that returns some value. The resulting closure must return optional, since if owner is deallocated before it is called there's nothing else it can return.
+///
+/// :param: owner The object to weakly apply to the given curried function or method
+/// :param: f     The function/method to weakly apply owner to as the first argument
+///
+/// :returns: A function where owner is weakly applied to the given function f. If owner is nil, returns nil. If owner is not nil, returns f(this)()
 public func weakify <T: AnyObject, U>(owner: T, f: T->()->U) -> () -> U? {
     return { [weak owner] in
         if let this = owner {
@@ -42,6 +51,12 @@ public func weakify <T: AnyObject, U>(owner: T, f: T->()->U) -> () -> U? {
     }
 }
 
+/// May be applied to a function that accepts and returns something. The resulting closure must return optional, since if owner is deallocated before it is called there's nothing else it can return.
+///
+/// :param: owner The object to weakly apply to the given curried function or method
+/// :param: f     The function/method to weakly apply owner to as the first argument
+///
+/// :returns: A function where owner is weakly applied to the given function f. If owner is nil, returns nil. If owner is not nil, returns f(this)($0)
 public func weakify <T: AnyObject, U, V>(owner: T, f: T->U->V) -> U -> V? {
     return { [weak owner] obj in
         if let this = owner {
@@ -52,6 +67,12 @@ public func weakify <T: AnyObject, U, V>(owner: T, f: T->U->V) -> U -> V? {
     }
 }
 
+/// May be applied to a function that accepts an optional value. The resulting closure can have a completely different type for the input argument. If owner is not nil at call time, the argument to the resulting closure is conditionally cast from V to U with the as? operator, and the result of that is passed to the original function (which is why it must accept an optional, in case the cast fails).
+///
+/// :param: owner The object to weakly apply to the given curried function or method
+/// :param: f     The function/method to weakly apply owner to as the first argument
+///
+/// :returns: A function where owner is weakly applied to the given function f. If owner is nil, nothing happens. If owner is not nil, returns f(this)($0 as? U)
 public func weakify <T: AnyObject, U, V>(owner: T, f: T->U?->()) -> V -> () {
     return { [weak owner] obj in
         if let this = owner {

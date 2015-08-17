@@ -6,7 +6,7 @@ import Weakify
 
 class Thing {}
 
-func placeholder<T,U>(t:T) -> U { fatalError("identity function") }
+func placeholder<T,U>(t:T) -> U { fatalError("placeholder function") }
 
 class WeakifySpec: QuickSpec {
     override func spec() {
