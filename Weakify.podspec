@@ -4,12 +4,8 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "A short description of Weakify."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                        Weakify is a µframework providing some commonly useful variations of the weakify() function. weakify() is primarily a way to be able to use a method on a class as a "closure" value that would be managed by some other component, but in a way that prevents memory leaks from occurring.
                        DESC
 
   s.homepage         = "https://github.com/klundberg/Weakify"

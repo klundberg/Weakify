@@ -81,16 +81,21 @@ may be applied to a function that accepts an optional value. The resulting closu
 
 ## Requirements
 
-* Supported on Xcode 6.3+/Swift 1.2 (Untested on XCode 6.2/Swift 1.1 and earlier)
+* Supported on Xcode 6.3+/Swift 1.2
+* iOS 8+/OS X 10.9+
 
 ## Installation
 
+### Cocoapods
 Weakify is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod "Weakify", "~> 0.1"
 ```
+
+### Manual installation
+If you cannot use cocoapods (if you still need to target iOS 7 at a minimum for instance), the recommended way to install this is to simply manually copy weakify.swift from the repo into your project. You may also opt to reference this repo as a git submodule, which is an exercise I leave to you.
 
 ## TODO
 
