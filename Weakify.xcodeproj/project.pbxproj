@@ -12,6 +12,7 @@
 		0076B4B11B8137690012CCD8 /* Weakify.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0076B4AE1B8137690012CCD8 /* Weakify.podspec */; };
 		0076B4B31B8138150012CCD8 /* Weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B21B8138150012CCD8 /* Weakify.swift */; };
 		0076B4B71B8138DE0012CCD8 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B61B8138DE0012CCD8 /* Tests.swift */; };
+		0076B4BA1B8189360012CCD8 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0076B4B91B8189360012CCD8 /* .travis.yml */; };
 		3BE1517F39C171DE43077C46 /* Pods_WeakifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E66B835BB3CDB1D546AEF3 /* Pods_WeakifyTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		0076B4AE1B8137690012CCD8 /* Weakify.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Weakify.podspec; sourceTree = "<group>"; };
 		0076B4B21B8138150012CCD8 /* Weakify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weakify.swift; sourceTree = "<group>"; };
 		0076B4B61B8138DE0012CCD8 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		0076B4B91B8189360012CCD8 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		18E66B835BB3CDB1D546AEF3 /* Pods_WeakifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeakifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2692B2DFFE571E4EF2D04D70 /* Pods-WeakifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeakifyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeakifyTests/Pods-WeakifyTests.release.xcconfig"; sourceTree = "<group>"; };
 		D874C6A08588C8CC9A5C2BDE /* Pods-WeakifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeakifyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeakifyTests/Pods-WeakifyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,9 +66,9 @@
 		0076B4861B8137070012CCD8 = {
 			isa = PBXGroup;
 			children = (
-				0076B4B81B813A390012CCD8 /* Project Information */,
 				0076B4921B8137070012CCD8 /* Weakify */,
 				0076B49F1B8137070012CCD8 /* WeakifyTests */,
+				0076B4B81B813A390012CCD8 /* Project Information */,
 				0076B4911B8137070012CCD8 /* Products */,
 				A9B5D9A6B58491C2635A9050 /* Pods */,
 				28A4271EA664F76FA37B8A42 /* Frameworks */,
@@ -120,6 +122,7 @@
 		0076B4B81B813A390012CCD8 /* Project Information */ = {
 			isa = PBXGroup;
 			children = (
+				0076B4B91B8189360012CCD8 /* .travis.yml */,
 				0076B4AC1B8137690012CCD8 /* LICENSE */,
 				0076B4AD1B8137690012CCD8 /* README.md */,
 				0076B4AE1B8137690012CCD8 /* Weakify.podspec */,
@@ -237,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0076B4BA1B8189360012CCD8 /* .travis.yml in Resources */,
 				0076B4B11B8137690012CCD8 /* Weakify.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

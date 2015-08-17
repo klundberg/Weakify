@@ -2,10 +2,10 @@
 Pod::Spec.new do |s|
   s.name             = "Weakify"
   s.version          = "0.1.0"
-  s.summary          = "A short description of Weakify."
+  s.summary          = "A set of functions that allow you to weakly apply an object to a method so that it can be used without causing memory leaks."
 
   s.description      = <<-DESC
-                        Weakify is a µframework providing some commonly useful variations of the weakify() function. weakify() is primarily a way to be able to use a method on a class as a "closure" value that would be managed by some other component, but in a way that prevents memory leaks from occurring.
+                        Weakify is a µframework providing some commonly useful variations of the weakify() function. weakify() is primarily a way to be able to use a method on a class as a closure value that would be managed by some other component, but in a way that prevents memory leaks from occurring.
                        DESC
 
   s.homepage         = "https://github.com/klundberg/Weakify"
