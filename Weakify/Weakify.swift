@@ -40,7 +40,7 @@ public func weakify <T: AnyObject, U>(owner: T, f: T->U->()) -> U -> () {
 /// :param: owner The object to weakly apply to the given curried function or method
 /// :param: f     The function/method to weakly apply owner to as the first argument
 ///
-/// :returns: A function where owner is weakly applied to the given function f. If owner is nil, returns nil. If owner is not nil, returns f(this)()
+/// :returns: A function where owner is weakly applied to the given function f. If owner is nil, returns nil. If owner is not nil, returns f(owner)()
 public func weakify <T: AnyObject, U>(owner: T, f: T->()->U) -> () -> U? {
     return { [weak owner] in
         if let this = owner {
@@ -56,7 +56,7 @@ public func weakify <T: AnyObject, U>(owner: T, f: T->()->U) -> () -> U? {
 /// :param: owner The object to weakly apply to the given curried function or method
 /// :param: f     The function/method to weakly apply owner to as the first argument
 ///
-/// :returns: A function where owner is weakly applied to the given function f. If owner is nil, returns nil. If owner is not nil, returns f(this)($0)
+/// :returns: A function where owner is weakly applied to the given function f. If owner is nil, returns nil. If owner is not nil, returns f(owner)($0)
 public func weakify <T: AnyObject, U, V>(owner: T, f: T->U->V) -> U -> V? {
     return { [weak owner] obj in
         if let this = owner {
@@ -72,7 +72,7 @@ public func weakify <T: AnyObject, U, V>(owner: T, f: T->U->V) -> U -> V? {
 /// :param: owner The object to weakly apply to the given curried function or method
 /// :param: f     The function/method to weakly apply owner to as the first argument
 ///
-/// :returns: A function where owner is weakly applied to the given function f. If owner is nil, nothing happens. If owner is not nil, returns f(this)($0 as? U)
+/// :returns: A function where owner is weakly applied to the given function f. If owner is nil, nothing happens. If owner is not nil, returns f(owner)($0 as? U)
 public func weakify <T: AnyObject, U, V>(owner: T, f: T->U?->()) -> V -> () {
     return { [weak owner] obj in
         if let this = owner {
