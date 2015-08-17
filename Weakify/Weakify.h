@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 Kevin Lundberg. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 //! Project version number for Weakify.
 FOUNDATION_EXPORT double WeakifyVersionNumber;
 
