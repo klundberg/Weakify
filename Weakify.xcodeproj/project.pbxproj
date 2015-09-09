@@ -17,14 +17,14 @@
 		795D9DBF1B968AE100C428E4 /* WeakifySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */; };
 		795D9DC01B968D1200C428E4 /* Weakify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795D9DA41B968A7C00C428E4 /* Weakify.framework */; };
 		795D9DC11B968D1A00C428E4 /* Weakify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0076B4901B8137070012CCD8 /* Weakify.framework */; };
-		795D9DD01B969AEC00C428E4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795D9DCB1B969AE100C428E4 /* Nimble.framework */; };
-		795D9DD11B969AEC00C428E4 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795D9DCC1B969AE100C428E4 /* Quick.framework */; };
-		795D9DD21B969AEE00C428E4 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 795D9DCB1B969AE100C428E4 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		795D9DD31B969AEE00C428E4 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 795D9DCC1B969AE100C428E4 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		795D9DD41B969AF800C428E4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795D9DCE1B969AE100C428E4 /* Nimble.framework */; };
-		795D9DD51B969AF800C428E4 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795D9DCF1B969AE100C428E4 /* Quick.framework */; };
-		795D9DD71B969B0300C428E4 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 795D9DCE1B969AE100C428E4 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		795D9DD81B969B0300C428E4 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 795D9DCF1B969AE100C428E4 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79D178281B9FE7C400C0DBBD /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D178241B9FE7C400C0DBBD /* Nimble.framework */; settings = {ASSET_TAGS = (); }; };
+		79D1782A1B9FE7C400C0DBBD /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D178261B9FE7C400C0DBBD /* Quick.framework */; settings = {ASSET_TAGS = (); }; };
+		79D178311B9FE7D900C0DBBD /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D1782D1B9FE7D900C0DBBD /* Nimble.framework */; settings = {ASSET_TAGS = (); }; };
+		79D178331B9FE7D900C0DBBD /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D1782F1B9FE7D900C0DBBD /* Quick.framework */; settings = {ASSET_TAGS = (); }; };
+		79D178351B9FE84600C0DBBD /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79D178241B9FE7C400C0DBBD /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79D178361B9FE84600C0DBBD /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79D178261B9FE7C400C0DBBD /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79D178371B9FE84C00C0DBBD /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79D1782D1B9FE7D900C0DBBD /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79D178381B9FE84C00C0DBBD /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79D1782F1B9FE7D900C0DBBD /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				795D9DD21B969AEE00C428E4 /* Nimble.framework in CopyFiles */,
-				795D9DD31B969AEE00C428E4 /* Quick.framework in CopyFiles */,
+				79D178351B9FE84600C0DBBD /* Nimble.framework in CopyFiles */,
+				79D178361B9FE84600C0DBBD /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +62,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				795D9DD71B969B0300C428E4 /* Nimble.framework in CopyFiles */,
-				795D9DD81B969B0300C428E4 /* Quick.framework in CopyFiles */,
+				79D178371B9FE84C00C0DBBD /* Nimble.framework in CopyFiles */,
+				79D178381B9FE84C00C0DBBD /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,11 +84,11 @@
 		795D9DA41B968A7C00C428E4 /* Weakify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Weakify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		795D9DAE1B968A7C00C428E4 /* Weakify-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weakify-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		795D9DC71B969A6F00C428E4 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
-		795D9DCB1B969AE100C428E4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
-		795D9DCC1B969AE100C428E4 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
-		795D9DCE1B969AE100C428E4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
-		795D9DCF1B969AE100C428E4 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
 		795D9DD91B969BA900C428E4 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		79D178241B9FE7C400C0DBBD /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
+		79D178261B9FE7C400C0DBBD /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
+		79D1782D1B9FE7D900C0DBBD /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
+		79D1782F1B9FE7D900C0DBBD /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +104,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				795D9DC11B968D1A00C428E4 /* Weakify.framework in Frameworks */,
-				795D9DD01B969AEC00C428E4 /* Nimble.framework in Frameworks */,
-				795D9DD11B969AEC00C428E4 /* Quick.framework in Frameworks */,
+				79D178281B9FE7C400C0DBBD /* Nimble.framework in Frameworks */,
+				79D1782A1B9FE7C400C0DBBD /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +121,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				795D9DC01B968D1200C428E4 /* Weakify.framework in Frameworks */,
-				795D9DD41B969AF800C428E4 /* Nimble.framework in Frameworks */,
-				795D9DD51B969AF800C428E4 /* Quick.framework in Frameworks */,
+				79D178311B9FE7D900C0DBBD /* Nimble.framework in Frameworks */,
+				79D178331B9FE7D900C0DBBD /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,27 +202,27 @@
 		795D9DC91B969AC600C428E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				795D9DCA1B969AE100C428E4 /* iOS */,
-				795D9DCD1B969AE100C428E4 /* Mac */,
+				79D178231B9FE7C400C0DBBD /* iOS */,
+				79D1782C1B9FE7D900C0DBBD /* Mac */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		795D9DCA1B969AE100C428E4 /* iOS */ = {
+		79D178231B9FE7C400C0DBBD /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				795D9DCB1B969AE100C428E4 /* Nimble.framework */,
-				795D9DCC1B969AE100C428E4 /* Quick.framework */,
+				79D178241B9FE7C400C0DBBD /* Nimble.framework */,
+				79D178261B9FE7C400C0DBBD /* Quick.framework */,
 			);
 			name = iOS;
 			path = Carthage/Build/iOS;
 			sourceTree = "<group>";
 		};
-		795D9DCD1B969AE100C428E4 /* Mac */ = {
+		79D1782C1B9FE7D900C0DBBD /* Mac */ = {
 			isa = PBXGroup;
 			children = (
-				795D9DCE1B969AE100C428E4 /* Nimble.framework */,
-				795D9DCF1B969AE100C428E4 /* Quick.framework */,
+				79D1782D1B9FE7D900C0DBBD /* Nimble.framework */,
+				79D1782F1B9FE7D900C0DBBD /* Quick.framework */,
 			);
 			name = Mac;
 			path = Carthage/Build/Mac;
@@ -330,7 +330,9 @@
 		0076B4871B8137070012CCD8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Kevin Lundberg";
 				TargetAttributes = {
 					0076B48F1B8137070012CCD8 = {
@@ -471,6 +473,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -553,6 +556,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Weakify;
 				SKIP_INSTALL = YES;
 			};
@@ -571,6 +575,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Weakify;
 				SKIP_INSTALL = YES;
 			};
@@ -590,6 +595,7 @@
 				);
 				INFOPLIST_FILE = WeakifyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -604,6 +610,7 @@
 				);
 				INFOPLIST_FILE = WeakifyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -627,6 +634,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Weakify;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -647,6 +655,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Weakify;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -670,6 +679,7 @@
 				INFOPLIST_FILE = WeakifyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -687,6 +697,7 @@
 				INFOPLIST_FILE = WeakifyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};

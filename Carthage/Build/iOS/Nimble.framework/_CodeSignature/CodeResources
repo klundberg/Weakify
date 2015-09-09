@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/DSL.h</key>
 		<data>
-		v3aTKHjtkHfyL8WXOlBBQDFpeaE=
+		auYzCIxlY2jTkyI1BlljW3KUTJY=
 		</data>
 		<key>Headers/NMBExceptionCapture.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/Nimble-Swift.h</key>
 		<data>
-		G4fhlfILLP9H+uDh6d4TdBbOHdM=
+		cjRwXyCUn/t4D1LOvnEXUnkAMFQ=
 		</data>
 		<key>Headers/Nimble.h</key>
 		<data>
@@ -22,23 +22,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		p9GOp+d/8hqqMk8hmSo/5N4Veyk=
+		m9rBh3svN6G89okFeorwD5OH+2g=
 		</data>
 		<key>Modules/Nimble.swiftmodule/arm.swiftdoc</key>
 		<data>
-		HY4oCpVzhT1L5hQBjAhqbF7vaI0=
+		lSaVfyH8XbRz0WDbmqKJxc5QtbY=
 		</data>
 		<key>Modules/Nimble.swiftmodule/arm.swiftmodule</key>
 		<data>
-		HwRHhHOgMKI9q3imcgJWdQW1zkY=
+		AvRigj3fHmGDADkwmj2uMp/2ItI=
 		</data>
 		<key>Modules/Nimble.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		bXfRylAlWq0E/oerikxIhwikcSM=
+		6W52hA33Ca+9qq8Yiql4aY8+0Rk=
 		</data>
 		<key>Modules/Nimble.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		9rpXrEOnwgqrMq1UxyrHt6Km6Jw=
+		xbDudDlen5/2JUB0UEhT8NANW8c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -49,7 +49,7 @@
 	<dict>
 		<key>Headers/DSL.h</key>
 		<data>
-		v3aTKHjtkHfyL8WXOlBBQDFpeaE=
+		auYzCIxlY2jTkyI1BlljW3KUTJY=
 		</data>
 		<key>Headers/NMBExceptionCapture.h</key>
 		<data>
@@ -57,7 +57,7 @@
 		</data>
 		<key>Headers/Nimble-Swift.h</key>
 		<data>
-		G4fhlfILLP9H+uDh6d4TdBbOHdM=
+		cjRwXyCUn/t4D1LOvnEXUnkAMFQ=
 		</data>
 		<key>Headers/Nimble.h</key>
 		<data>
@@ -65,19 +65,19 @@
 		</data>
 		<key>Modules/Nimble.swiftmodule/arm.swiftdoc</key>
 		<data>
-		HY4oCpVzhT1L5hQBjAhqbF7vaI0=
+		lSaVfyH8XbRz0WDbmqKJxc5QtbY=
 		</data>
 		<key>Modules/Nimble.swiftmodule/arm.swiftmodule</key>
 		<data>
-		HwRHhHOgMKI9q3imcgJWdQW1zkY=
+		AvRigj3fHmGDADkwmj2uMp/2ItI=
 		</data>
 		<key>Modules/Nimble.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		bXfRylAlWq0E/oerikxIhwikcSM=
+		6W52hA33Ca+9qq8Yiql4aY8+0Rk=
 		</data>
 		<key>Modules/Nimble.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		9rpXrEOnwgqrMq1UxyrHt6Km6Jw=
+		xbDudDlen5/2JUB0UEhT8NANW8c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
