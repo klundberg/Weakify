@@ -81,6 +81,7 @@
 		0076B4B21B8138150012CCD8 /* Weakify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weakify.swift; sourceTree = "<group>"; };
 		0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakifySpec.swift; sourceTree = "<group>"; };
 		0076B4B91B8189360012CCD8 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		795CFEF71BA132AD008B20FD /* Weakify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Weakify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		795D9DA41B968A7C00C428E4 /* Weakify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Weakify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		795D9DAE1B968A7C00C428E4 /* Weakify-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weakify-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		795D9DC71B969A6F00C428E4 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
@@ -106,6 +107,13 @@
 				795D9DC11B968D1A00C428E4 /* Weakify.framework in Frameworks */,
 				79D178281B9FE7C400C0DBBD /* Nimble.framework in Frameworks */,
 				79D1782A1B9FE7C400C0DBBD /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795CFEF31BA132AD008B20FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +155,7 @@
 				0076B49B1B8137070012CCD8 /* Weakify-iOSTests.xctest */,
 				795D9DA41B968A7C00C428E4 /* Weakify.framework */,
 				795D9DAE1B968A7C00C428E4 /* Weakify-OSXTests.xctest */,
+				795CFEF71BA132AD008B20FD /* Weakify.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,6 +248,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		795CFEF41BA132AD008B20FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		795D9DA11B968A7C00C428E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,6 +302,24 @@
 			productName = WeakifyTests;
 			productReference = 0076B49B1B8137070012CCD8 /* Weakify-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		795CFEF61BA132AD008B20FD /* Weakify-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795CFEFC1BA132AD008B20FD /* Build configuration list for PBXNativeTarget "Weakify-watchOS" */;
+			buildPhases = (
+				795CFEF21BA132AD008B20FD /* Sources */,
+				795CFEF31BA132AD008B20FD /* Frameworks */,
+				795CFEF41BA132AD008B20FD /* Headers */,
+				795CFEF51BA132AD008B20FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Weakify-watchOS";
+			productName = Weakify;
+			productReference = 795CFEF71BA132AD008B20FD /* Weakify.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		795D9DA31B968A7C00C428E4 /* Weakify-OSX */ = {
 			isa = PBXNativeTarget;
@@ -341,6 +375,9 @@
 					0076B49A1B8137070012CCD8 = {
 						CreatedOnToolsVersion = 6.4;
 					};
+					795CFEF61BA132AD008B20FD = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					795D9DA31B968A7C00C428E4 = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -365,6 +402,7 @@
 				0076B49A1B8137070012CCD8 /* Weakify-iOSTests */,
 				795D9DA31B968A7C00C428E4 /* Weakify-OSX */,
 				795D9DAD1B968A7C00C428E4 /* Weakify-OSXTests */,
+				795CFEF61BA132AD008B20FD /* Weakify-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -380,6 +418,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0076B4991B8137070012CCD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795CFEF51BA132AD008B20FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -416,6 +461,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0076B4B71B8138DE0012CCD8 /* WeakifySpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795CFEF21BA132AD008B20FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +667,45 @@
 			};
 			name = Release;
 		};
+		795CFEFD1BA132AD008B20FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Weakify/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klundberg.Weakify;
+				PRODUCT_NAME = Weakify;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		795CFEFE1BA132AD008B20FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Weakify/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klundberg.Weakify;
+				PRODUCT_NAME = Weakify;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		795D9DB81B968A7C00C428E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -732,6 +823,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		795CFEFC1BA132AD008B20FD /* Build configuration list for PBXNativeTarget "Weakify-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795CFEFD1BA132AD008B20FD /* Debug */,
+				795CFEFE1BA132AD008B20FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		795D9DB71B968A7C00C428E4 /* Build configuration list for PBXNativeTarget "Weakify-OSX" */ = {
 			isa = XCConfigurationList;

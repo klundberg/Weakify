@@ -7,7 +7,6 @@
 //
 
 /// May be applied to any method that takes no arguments and returns none. The resulting closure can accept an argument which will simply be ignored (useful in cases like `NSNotificationCenter` when you don't care about the `notification` argument), or the type may also represent `Void`, meaning no input arguments are necessary.
-
 ///
 /// - parameter owner: The object to weakly apply to the given curried function or method
 /// - parameter f:     The function/method to weakly apply owner to as the first argument
@@ -21,6 +20,7 @@ public func weakify <T: AnyObject, U>(owner: T, _ f: T->()->()) -> U -> () {
     }
 }
 
+/// May be applied to any method that takes no arguments and returns none or throws. The resulting closure can accept an argument which will simply be ignored (useful in cases like `NSNotificationCenter` when you don't care about the `notification` argument), or the type may also represent `Void`, meaning no input arguments are necessary.
 ///
 /// - parameter owner: The object to weakly apply to the given curried function or method
 /// - parameter f:     The function/method to weakly apply owner to as the first argument
@@ -48,7 +48,7 @@ public func weakify <T: AnyObject, U>(owner: T, _ f: T -> U -> ()) -> U -> () {
     }
 }
 
-/// May be applied to a method that accepts an argument and returns none, which the resulting closure mirrors.
+/// May be applied to a method that accepts an argument and returns none or throws, which the resulting closure mirrors.
 ///
 /// - parameter owner: The object to weakly apply to the given curried function or method
 /// - parameter f:     The function/method to weakly apply owner to as the first argument
@@ -78,7 +78,7 @@ public func weakify <T: AnyObject, U>(owner: T, _ f: T->()->U) -> () -> U? {
     }
 }
 
-/// May be applied to a function that returns some value. The resulting closure must return optional, since if owner is deallocated before it is called there's nothing else it can return.
+/// May be applied to a function that returns some value or throws. The resulting closure must return optional, since if owner is deallocated before it is called there's nothing else it can return.
 ///
 /// - parameter owner: The object to weakly apply to the given curried function or method
 /// - parameter f:     The function/method to weakly apply owner to as the first argument
@@ -110,7 +110,7 @@ public func weakify <T: AnyObject, U, V>(owner: T, _ f: T->U->V) -> U -> V? {
     }
 }
 
-/// May be applied to a function that accepts and returns something. The resulting closure must return optional, since if owner is deallocated before it is called there's nothing else it can return.
+/// May be applied to a function that accepts and returns something or throws. The resulting closure must return optional, since if owner is deallocated before it is called there's nothing else it can return.
 ///
 /// - parameter owner: The object to weakly apply to the given curried function or method
 /// - parameter f:     The function/method to weakly apply owner to as the first argument
@@ -140,7 +140,7 @@ public func weakify <T: AnyObject, U, V>(owner: T, _ f: T -> U? -> ()) -> V -> (
     }
 }
 
-/// May be applied to a function that accepts an optional value. The resulting closure can have a completely different type for the input argument. If owner is not nil at call time, the argument to the resulting closure is conditionally cast from V to U with the as? operator, and the result of that is passed to the original function (which is why it must accept an optional, in case the cast fails).
+/// May be applied to a function that accepts an optional value or throws. The resulting closure can have a completely different type for the input argument. If owner is not nil at call time, the argument to the resulting closure is conditionally cast from V to U with the as? operator, and the result of that is passed to the original function (which is why it must accept an optional, in case the cast fails).
 ///
 /// - parameter owner: The object to weakly apply to the given curried function or method
 /// - parameter f:     The function/method to weakly apply owner to as the first argument
