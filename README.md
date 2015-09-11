@@ -56,27 +56,32 @@ weakify separates the instance of the object from the method using static method
 There are a few variants of weakify available in this library for you to use:
 
 ```swift
-func weakify <T: AnyObject, U>(owner: T, f: T->()->()) -> U -> ()
+func weakify <T: AnyObject, U>(owner: T, f: T -> () -> ()) -> U -> ()
+func weakify <T: AnyObject, U>(owner: T, f: T -> () throws ->()) -> U throws -> ()
 ```
 may be applied to any method that takes no arguments and returns none. The resulting closure can accept an argument which will simply be ignored (useful in cases like `NSNotificationCenter` when you don't care about the `notification` argument), or the type may also represent `Void`, meaning no input arguments are necessary.
 
 ```swift
-func weakify <T: AnyObject, U>(owner: T, f: T->U->()) -> U -> ()
+func weakify <T: AnyObject, U>(owner: T, f: T -> U -> ()) -> U -> ()
+func weakify <T: AnyObject, U>(owner: T, f: T -> U throws ->()) -> U throws -> ()
 ```
 may be applied to a method that accepts an argument and returns none, which the resulting closure mirrors.
 
 ```swift
-func weakify <T: AnyObject, U>(owner: T, f: T->()->U) -> () -> U?
+func weakify <T: AnyObject, U>(owner: T, f: T -> () -> U) -> () -> U?
+func weakify <T: AnyObject, U>(owner: T, f: T -> () throws -> U) -> () throws -> U?
 ```
 may be applied to a function that returns some value. The resulting closure must return optional, since if owner is deallocated before it is called there's nothing else it can return.
 
 ```swift
-func weakify <T: AnyObject, U, V>(owner: T, f: T->U->V) -> U -> V?
+func weakify <T: AnyObject, U, V>(owner: T, f: T -> U -> V) -> U -> V?
+func weakify <T: AnyObject, U, V>(owner: T, f: T -> U throws -> V) -> U throws -> V?
 ```
 may be applied to a function that accepts and returns something; effectively a union of the two previous cases.
 
 ```swift
-func weakify <T: AnyObject, U, V>(owner: T, f: T->U?->()) -> V -> ()
+func weakify <T: AnyObject, U, V>(owner: T, f: T -> U? -> ()) -> V -> ()
+func weakify <T: AnyObject, U, V>(owner: T, f: T -> U? throws -> ()) -> V throws -> ()
 ```
 may be applied to a function that accepts an optional value. The resulting closure can have a completely different type for the input argument. If `owner` is not `nil` at call time, the argument to the resulting closure is conditionally cast from `V` to `U` with the `as?` operator, and the result of that is passed to the original function (which is why it must accept an optional, in case the cast fails).
 

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "795CFEF61BA132AD008B20FD"
-               BuildableName = "Weakify-watchOS.framework"
+               BuildableName = "Weakify.framework"
                BlueprintName = "Weakify-watchOS"
                ReferencedContainer = "container:Weakify.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "795CFEF61BA132AD008B20FD"
-            BuildableName = "Weakify-watchOS.framework"
+            BuildableName = "Weakify.framework"
             BlueprintName = "Weakify-watchOS"
             ReferencedContainer = "container:Weakify.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "795CFEF61BA132AD008B20FD"
-            BuildableName = "Weakify-watchOS.framework"
+            BuildableName = "Weakify.framework"
             BlueprintName = "Weakify-watchOS"
             ReferencedContainer = "container:Weakify.xcodeproj">
          </BuildableReference>
