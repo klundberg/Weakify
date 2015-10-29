@@ -99,7 +99,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 # Swift 2:
-pod "Weakify", "~> 0.2.0"
+pod "Weakify", "~> 0.2.1"
 
 # Swift 1.2:
 pod "Weakify", "~> 0.1.3"
@@ -110,7 +110,7 @@ Weakify can be integrated with [Carthage](https://github.com/Carthage/Carthage).
 
 ```
 # Swift 2:
-github "klundberg/Weakify" ~> 0.2.0
+github "klundberg/Weakify" ~> 0.2.1
 
 # Swift 1.2:
 github "klundberg/Weakify" ~> 0.1.3
