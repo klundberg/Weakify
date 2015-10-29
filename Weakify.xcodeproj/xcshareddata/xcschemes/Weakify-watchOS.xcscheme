@@ -29,16 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "792982FE1BE1DD21006CCA66"
-               BuildableName = "Weakify-watchOSTests.xctest"
-               BlueprintName = "Weakify-watchOSTests"
-               ReferencedContainer = "container:Weakify.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
