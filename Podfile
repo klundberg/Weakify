@@ -17,3 +17,9 @@ target :osx do
     platform :osx, '10.9'
     test_pods
 end
+
+target :tvos do
+    link_with 'Weakify-tvOSTests'
+    platform :tvos, '9.0'
+    test_pods
+end

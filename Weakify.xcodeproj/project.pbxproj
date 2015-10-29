@@ -12,7 +12,12 @@
 		0076B4B31B8138150012CCD8 /* Weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B21B8138150012CCD8 /* Weakify.swift */; };
 		0076B4B71B8138DE0012CCD8 /* WeakifySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */; };
 		0076B4BA1B8189360012CCD8 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0076B4B91B8189360012CCD8 /* .travis.yml */; };
+		17FF5CA3236B8C63A61ED98E /* Pods_tvos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2B597BBEBC8E7A561D3F51 /* Pods_tvos.framework */; };
 		6CBB287212ED0FF58F9EFA27 /* Pods_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C9E4D27881071336F404BE /* Pods_ios.framework */; };
+		792982EB1BE1D967006CCA66 /* Weakify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792982E11BE1D966006CCA66 /* Weakify.framework */; };
+		792982F81BE1D98D006CCA66 /* Weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B21B8138150012CCD8 /* Weakify.swift */; };
+		792982F91BE1D992006CCA66 /* Weakify.h in Headers */ = {isa = PBXBuildFile; fileRef = 0076B4951B8137070012CCD8 /* Weakify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		792982FA1BE1D99B006CCA66 /* WeakifySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */; };
 		795D9DBD1B968ACC00C428E4 /* Weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B21B8138150012CCD8 /* Weakify.swift */; };
 		795D9DBE1B968ACF00C428E4 /* Weakify.h in Headers */ = {isa = PBXBuildFile; fileRef = 0076B4951B8137070012CCD8 /* Weakify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		795D9DBF1B968AE100C428E4 /* WeakifySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */; };
@@ -28,6 +33,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0076B48F1B8137070012CCD8;
 			remoteInfo = Weakify;
+		};
+		792982EC1BE1D967006CCA66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0076B4871B8137070012CCD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 792982E01BE1D966006CCA66;
+			remoteInfo = "Weakify-tvOS";
 		};
 		795D9DB01B968A7C00C428E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -51,15 +63,20 @@
 		0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakifySpec.swift; sourceTree = "<group>"; };
 		0076B4B91B8189360012CCD8 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		18A1B122BDB17184B93A1EC9 /* Pods-osx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-osx/Pods-osx.debug.xcconfig"; sourceTree = "<group>"; };
+		2E2B597BBEBC8E7A561D3F51 /* Pods_tvos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE174DF7E0AAEF9CBFF95E2 /* Pods-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios/Pods-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		59D3425A815B6ED17BD3AC6D /* Pods-osx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osx.release.xcconfig"; path = "Pods/Target Support Files/Pods-osx/Pods-osx.release.xcconfig"; sourceTree = "<group>"; };
 		76163625758C8B15887761E7 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
 		774A48D2AC01ED0C7C34BA09 /* Pods_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_osx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		792982E11BE1D966006CCA66 /* Weakify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Weakify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		792982EA1BE1D966006CCA66 /* Weakify-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weakify-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		793E9B947D934262E917ADE1 /* Pods-tvos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvos.release.xcconfig"; path = "Pods/Target Support Files/Pods-tvos/Pods-tvos.release.xcconfig"; sourceTree = "<group>"; };
 		795CFEF71BA132AD008B20FD /* Weakify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Weakify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		795D9DA41B968A7C00C428E4 /* Weakify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Weakify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		795D9DAE1B968A7C00C428E4 /* Weakify-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weakify-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		795D9DD91B969BA900C428E4 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		B3C9E4D27881071336F404BE /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD94F8AE52F83821FBA55549 /* Pods-tvos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tvos/Pods-tvos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +93,22 @@
 			files = (
 				795D9DC11B968D1A00C428E4 /* Weakify.framework in Frameworks */,
 				6CBB287212ED0FF58F9EFA27 /* Pods_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		792982DD1BE1D966006CCA66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		792982E71BE1D966006CCA66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792982EB1BE1D967006CCA66 /* Weakify.framework in Frameworks */,
+				17FF5CA3236B8C63A61ED98E /* Pods_tvos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +158,8 @@
 				795D9DA41B968A7C00C428E4 /* Weakify.framework */,
 				795D9DAE1B968A7C00C428E4 /* Weakify-OSXTests.xctest */,
 				795CFEF71BA132AD008B20FD /* Weakify.framework */,
+				792982E11BE1D966006CCA66 /* Weakify.framework */,
+				792982EA1BE1D966006CCA66 /* Weakify-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +218,8 @@
 				76163625758C8B15887761E7 /* Pods-ios.release.xcconfig */,
 				18A1B122BDB17184B93A1EC9 /* Pods-osx.debug.xcconfig */,
 				59D3425A815B6ED17BD3AC6D /* Pods-osx.release.xcconfig */,
+				BD94F8AE52F83821FBA55549 /* Pods-tvos.debug.xcconfig */,
+				793E9B947D934262E917ADE1 /* Pods-tvos.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -192,6 +229,7 @@
 			children = (
 				B3C9E4D27881071336F404BE /* Pods_ios.framework */,
 				774A48D2AC01ED0C7C34BA09 /* Pods_osx.framework */,
+				2E2B597BBEBC8E7A561D3F51 /* Pods_tvos.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,6 +242,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0076B4961B8137070012CCD8 /* Weakify.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		792982DE1BE1D966006CCA66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792982F91BE1D992006CCA66 /* Weakify.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +308,45 @@
 			name = "Weakify-iOSTests";
 			productName = WeakifyTests;
 			productReference = 0076B49B1B8137070012CCD8 /* Weakify-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		792982E01BE1D966006CCA66 /* Weakify-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 792982F61BE1D967006CCA66 /* Build configuration list for PBXNativeTarget "Weakify-tvOS" */;
+			buildPhases = (
+				792982DC1BE1D966006CCA66 /* Sources */,
+				792982DD1BE1D966006CCA66 /* Frameworks */,
+				792982DE1BE1D966006CCA66 /* Headers */,
+				792982DF1BE1D966006CCA66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Weakify-tvOS";
+			productName = "Weakify-tvOS";
+			productReference = 792982E11BE1D966006CCA66 /* Weakify.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		792982E91BE1D966006CCA66 /* Weakify-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 792982F71BE1D967006CCA66 /* Build configuration list for PBXNativeTarget "Weakify-tvOSTests" */;
+			buildPhases = (
+				B6B14EC915669A400278E4AC /* Check Pods Manifest.lock */,
+				792982E61BE1D966006CCA66 /* Sources */,
+				792982E71BE1D966006CCA66 /* Frameworks */,
+				792982E81BE1D966006CCA66 /* Resources */,
+				7A5E253B2D3003A363C68D63 /* Embed Pods Frameworks */,
+				E256E95C1950FB1AEDD64DD8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				792982ED1BE1D967006CCA66 /* PBXTargetDependency */,
+			);
+			name = "Weakify-tvOSTests";
+			productName = "Weakify-tvOSTests";
+			productReference = 792982EA1BE1D966006CCA66 /* Weakify-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		795CFEF61BA132AD008B20FD /* Weakify-watchOS */ = {
@@ -328,7 +413,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Kevin Lundberg";
 				TargetAttributes = {
@@ -337,6 +422,12 @@
 					};
 					0076B49A1B8137070012CCD8 = {
 						CreatedOnToolsVersion = 6.4;
+					};
+					792982E01BE1D966006CCA66 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					792982E91BE1D966006CCA66 = {
+						CreatedOnToolsVersion = 7.1;
 					};
 					795CFEF61BA132AD008B20FD = {
 						CreatedOnToolsVersion = 7.0;
@@ -366,6 +457,8 @@
 				795D9DA31B968A7C00C428E4 /* Weakify-OSX */,
 				795D9DAD1B968A7C00C428E4 /* Weakify-OSXTests */,
 				795CFEF61BA132AD008B20FD /* Weakify-watchOS */,
+				792982E01BE1D966006CCA66 /* Weakify-tvOS */,
+				792982E91BE1D966006CCA66 /* Weakify-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -381,6 +474,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0076B4991B8137070012CCD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		792982DF1BE1D966006CCA66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		792982E81BE1D966006CCA66 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -441,6 +548,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios/Pods-ios-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7A5E253B2D3003A363C68D63 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvos/Pods-tvos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8FF1C5B321D272AFE8ED3515 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,6 +576,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-osx/Pods-osx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6B14EC915669A400278E4AC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		CA20EB432C65C658055B9022 /* Copy Pods Resources */ = {
@@ -484,6 +621,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-osx/Pods-osx-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E256E95C1950FB1AEDD64DD8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvos/Pods-tvos-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F72A17BA1BA8710E61744048 /* Check Pods Manifest.lock */ = {
@@ -520,6 +672,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		792982DC1BE1D966006CCA66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792982F81BE1D98D006CCA66 /* Weakify.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		792982E61BE1D966006CCA66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792982FA1BE1D99B006CCA66 /* WeakifySpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		795CFEF21BA132AD008B20FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -550,6 +718,11 @@
 			isa = PBXTargetDependency;
 			target = 0076B48F1B8137070012CCD8 /* Weakify-iOS */;
 			targetProxy = 0076B49D1B8137070012CCD8 /* PBXContainerItemProxy */;
+		};
+		792982ED1BE1D967006CCA66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 792982E01BE1D966006CCA66 /* Weakify-tvOS */;
+			targetProxy = 792982EC1BE1D967006CCA66 /* PBXContainerItemProxy */;
 		};
 		795D9DB11B968A7C00C428E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -715,6 +888,72 @@
 			};
 			name = Release;
 		};
+		792982F21BE1D967006CCA66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Weakify/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.Weakify-tvOS";
+				PRODUCT_NAME = Weakify;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		792982F31BE1D967006CCA66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Weakify/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.Weakify-tvOS";
+				PRODUCT_NAME = Weakify;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		792982F41BE1D967006CCA66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD94F8AE52F83821FBA55549 /* Pods-tvos.debug.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = WeakifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.Weakify-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		792982F51BE1D967006CCA66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793E9B947D934262E917ADE1 /* Pods-tvos.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = WeakifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.Weakify-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		795CFEFD1BA132AD008B20FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -860,6 +1099,24 @@
 			buildConfigurations = (
 				0076B4AA1B8137070012CCD8 /* Debug */,
 				0076B4AB1B8137070012CCD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		792982F61BE1D967006CCA66 /* Build configuration list for PBXNativeTarget "Weakify-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				792982F21BE1D967006CCA66 /* Debug */,
+				792982F31BE1D967006CCA66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		792982F71BE1D967006CCA66 /* Build configuration list for PBXNativeTarget "Weakify-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				792982F41BE1D967006CCA66 /* Debug */,
+				792982F51BE1D967006CCA66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
