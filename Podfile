@@ -1,0 +1,19 @@
+workspace 'Weakify'
+use_frameworks!
+
+def test_pods
+    pod 'Nimble', '~> 3.0.0'
+    pod 'Quick', '~> 0.8.0'
+end
+
+target :ios do
+    link_with 'Weakify-iOSTests'
+    platform :ios, '8.0'
+    test_pods
+end
+
+target :osx do
+    link_with 'Weakify-OSXTests'
+    platform :osx, '10.9'
+    test_pods
+end
