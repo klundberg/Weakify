@@ -7,8 +7,6 @@ import Weakify
 class Thing {}
 enum Error: ErrorType { case Error }
 
-func placeholder<T,U>(t:T) -> U { fatalError("placeholder function") }
-
 class WeakifySpec: QuickSpec {
     override func spec() {
         var object: Thing?
@@ -24,7 +22,7 @@ class WeakifySpec: QuickSpec {
                 let function = { (object: Thing) -> () -> () in
                     return { executed = true }
                 };
-                var f: () -> () = placeholder
+                var f: () -> () = {}
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -46,7 +44,7 @@ class WeakifySpec: QuickSpec {
                 let function = { (object: Thing) -> () throws -> () in
                     return { executed = true }
                 };
-                var f: () throws -> () = placeholder
+                var f: () throws -> () = {}
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -68,7 +66,7 @@ class WeakifySpec: QuickSpec {
                 let function = { (object: Thing) -> () throws -> () in
                     return { throw Error.Error }
                 };
-                var f: () throws -> () = placeholder
+                var f: () throws -> () = {}
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -92,7 +90,7 @@ class WeakifySpec: QuickSpec {
                     return { _ in executed = true }
                 }
 
-                var f: Int -> () = placeholder
+                var f: Int -> () = { _ in }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -115,7 +113,7 @@ class WeakifySpec: QuickSpec {
                     return { _ in executed = true }
                 }
 
-                var f: Int throws -> () = placeholder
+                var f: Int throws -> () = { _ in }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -138,7 +136,7 @@ class WeakifySpec: QuickSpec {
                     return { _ in throw Error.Error }
                 }
 
-                var f: Int throws -> () = placeholder
+                var f: Int throws -> () = { _ in }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -162,7 +160,7 @@ class WeakifySpec: QuickSpec {
                 let function = { (object: Thing) -> (value: String) -> () in
                     return { stringValue = $0 }
                 }
-                var f: String -> () = placeholder
+                var f: String -> () = { _ in }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -185,7 +183,7 @@ class WeakifySpec: QuickSpec {
                 let function = { (object: Thing) -> (value: String) throws -> () in
                     return { stringValue = $0 }
                 }
-                var f: String throws -> () = placeholder
+                var f: String throws -> () = { _ in }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -207,7 +205,7 @@ class WeakifySpec: QuickSpec {
                 let function = { (object: Thing) -> (value: String) throws -> () in
                     return { _ in throw Error.Error }
                 }
-                var f: String throws -> () = placeholder
+                var f: String throws -> () = { _ in }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -230,7 +228,7 @@ class WeakifySpec: QuickSpec {
                 let function = { (object: Thing) -> () -> Int in
                     return { executed = true; return 123 }
                 }
-                var f: () -> Int? = placeholder
+                var f: () -> Int? = { nil }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -252,7 +250,7 @@ class WeakifySpec: QuickSpec {
                 let function = { (object: Thing) -> () throws -> Int in
                     return { executed = true; return 123 }
                 }
-                var f: () throws -> Int? = placeholder
+                var f: () throws -> Int? = { nil }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -274,7 +272,7 @@ class WeakifySpec: QuickSpec {
                 let function = { (object: Thing) -> () throws -> Int in
                     return { throw Error.Error }
                 }
-                var f: () throws -> Int? = placeholder
+                var f: () throws -> Int? = { nil }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -298,7 +296,7 @@ class WeakifySpec: QuickSpec {
                     return { executed = true; return String($0) }
                 }
 
-                var f: Int -> String? = placeholder
+                var f: Int -> String? = { _ in nil }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -321,7 +319,7 @@ class WeakifySpec: QuickSpec {
                     return { executed = true; return String($0) }
                 }
 
-                var f: Int throws -> String? = placeholder
+                var f: Int throws -> String? = { _ in nil }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -344,7 +342,7 @@ class WeakifySpec: QuickSpec {
                     return { _ in throw Error.Error }
                 }
 
-                var f: Int throws -> String? = placeholder
+                var f: Int throws -> String? = { _ in nil }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -373,7 +371,7 @@ class WeakifySpec: QuickSpec {
                     return { executed = true; value = $0 }
                 }
 
-                var f: Base -> () = placeholder
+                var f: Base -> () = { _ in }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -404,7 +402,7 @@ class WeakifySpec: QuickSpec {
                     return { executed = true; value = $0 }
                 }
 
-                var f: Base throws -> () = placeholder
+                var f: Base throws -> () = { _ in }
 
                 beforeEach {
                     f = weakify(object!, function)
@@ -435,7 +433,7 @@ class WeakifySpec: QuickSpec {
                     return { _ in throw Error.Error }
                 }
 
-                var f: Base throws -> () = placeholder
+                var f: Base throws -> () = { _ in }
 
                 beforeEach {
                     f = weakify(object!, function)
