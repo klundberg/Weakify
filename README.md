@@ -95,29 +95,40 @@ may be applied to a function that accepts an optional value. The resulting closu
 ## Installation
 
 ### Cocoapods
+
 Weakify is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 # Swift 2:
-pod "Weakify", "~> 0.2.1"
+pod "Weakify", "~> 0.2.2"
 
 # Swift 1.2:
 pod "Weakify", "~> 0.1.3"
 ```
 
 ### Carthage
+
 Weakify can be integrated with [Carthage](https://github.com/Carthage/Carthage). Add the following to your Cartfile to use it:
 
 ```
 # Swift 2:
-github "klundberg/Weakify" ~> 0.2.1
+github "klundberg/Weakify" ~> 0.2.2
 
 # Swift 1.2:
 github "klundberg/Weakify" ~> 0.1.3
 ```
 
+### Swift Package Manager
+
+Add the following line to your dependencies list in your `Package.swift` file:
+
+```
+.Package(url: "https://github.com/klundberg/weakify.git", versions:Version(0,2,2)..<Version(0,3,0)),
+```
+
 ### Manual installation
+
 If you cannot use cocoapods (if you still need to target iOS 7 at a minimum for instance), the recommended way to install this is to simply manually copy weakify.swift from the repo into your project. You may also opt to reference this repo as a git submodule, which is an exercise I leave to you.
 
 ## Author
@@ -125,7 +136,7 @@ If you cannot use cocoapods (if you still need to target iOS 7 at a minimum for 
 Kevin Lundberg, kevin at klundberg dot com
 
 ## Contributions
-If you have additional variants of weakify you'd like to see, feel free to submit a pull request! Please include Quick-based unit tests with any changes.
+If you have additional variants of weakify you'd like to see, feel free to submit a pull request! Please include Quick-based unit tests with any changes. Cocoapods is required for running the unit tests.
 
 ## License
 

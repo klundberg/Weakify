@@ -2,12 +2,8 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 osx_image: xcode7.1
-
 language: objective-c
-# before_install:
-# - gem install cocoapods --no-rdoc --no-ri --no-document --quiet # Since Travis is not always on latest version
-# install:
-# - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+
 script:
 - set -o pipefail && xcodebuild analyze test -workspace Weakify.xcworkspace -scheme Weakify-OSX -sdk macosx ONLY_ACTIVE_ARCH=NO | xcpretty -c
 - set -o pipefail && xcodebuild analyze -workspace Weakify.xcworkspace -scheme Weakify-watchOS -sdk watchsimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c

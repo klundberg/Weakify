@@ -1,8 +1,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "Weakify"
-  s.version          = "0.2.1"
-  s.summary          = "Weakly apply an object to a curried static method safely"
+  s.version          = "0.2.2"
+  s.summary          = "Weakly associate an object with a reference to one of its methods"
   s.description      = <<-DESC
                         Weakify is a µframework providing some commonly useful variations of the weakify() function. weakify() is primarily a way to be able to use a method on a class as a closure value that would be managed by some other component, but in a way that prevents memory leaks from occurring.
                        DESC
@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
       :watchos => "2.0",
       :tvos => "9.0"
   }
-  s.source_files = 'Weakify/**/*.swift'
+  s.source_files = 'Sources/**/*.swift'
 end

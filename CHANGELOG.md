@@ -1,5 +1,8 @@
 # Changelog
 
+* 0.2.2
+ * Added support for building Weakify with the swift package manager.
+
 * 0.2.1 
  * tvOS framework added
  * watchOS framework fixed (did not properly contain weakify.swift)
