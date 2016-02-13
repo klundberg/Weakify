@@ -94,7 +94,7 @@ may be applied to a function that accepts an optional value. The resulting closu
 
 ## Installation
 
-### Cocoapods
+### CocoaPods
 
 Weakify is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -136,7 +136,7 @@ If you cannot use cocoapods (if you still need to target iOS 7 at a minimum for 
 Kevin Lundberg, kevin at klundberg dot com
 
 ## Contributions
-If you have additional variants of weakify you'd like to see, feel free to submit a pull request! Please include Quick-based unit tests with any changes. Cocoapods is required for running the unit tests.
+If you have additional variants of weakify you'd like to see, feel free to submit a pull request! Please include Quick-based unit tests with any changes. CocoaPods is required for running the unit tests.
 
 ## License
 
