@@ -2,8 +2,8 @@ workspace 'Weakify'
 use_frameworks!
 
 def test_pods
-    pod 'Nimble', '~> 3.0.0'
-    pod 'Quick', '~> 0.8.0'
+    pod 'Nimble', '~> 3.2.0'
+    pod 'Quick', '~> 0.9.1'
 end
 
 target :ios do

@@ -21,7 +21,7 @@ class WeakifySpec: QuickSpec {
             context("normal version") {
                 let function = { (object: Thing) -> () -> () in
                     return { executed = true }
-                };
+                }
                 var f: () -> () = {}
 
                 beforeEach {
@@ -43,7 +43,7 @@ class WeakifySpec: QuickSpec {
             context("throwsing version") {
                 let function = { (object: Thing) -> () throws -> () in
                     return { executed = true }
-                };
+                }
                 var f: () throws -> () = {}
 
                 beforeEach {
@@ -65,7 +65,7 @@ class WeakifySpec: QuickSpec {
             context("throwsing version that throws") {
                 let function = { (object: Thing) -> () throws -> () in
                     return { throw Error.Error }
-                };
+                }
                 var f: () throws -> () = {}
 
                 beforeEach {
@@ -236,7 +236,7 @@ class WeakifySpec: QuickSpec {
 
                 it("will execute the method and return an optional thing") {
                     expect(f()) == .Some(123)
-                    expect(executed) == true;
+                    expect(executed) == true
                 }
 
                 it("will not execute and will return nil") {
@@ -258,7 +258,7 @@ class WeakifySpec: QuickSpec {
 
                 it("will execute the method and return an optional thing") {
                     expect(try! f()) == .Some(123)
-                    expect(executed) == true;
+                    expect(executed) == true
                 }
 
                 it("will not execute and will return nil") {
@@ -304,13 +304,13 @@ class WeakifySpec: QuickSpec {
 
                 it("will execute the method and return an optional thing") {
                     expect(f(123)) == .Some("123")
-                    expect(executed) == true;
+                    expect(executed) == true
                 }
 
                 it("will not execute and will return nil") {
                     object = nil
                     expect(f(123)).to(beNil())
-                    expect(executed) == false;
+                    expect(executed) == false
                 }
             }
 
@@ -327,13 +327,13 @@ class WeakifySpec: QuickSpec {
 
                 it("will execute the method and return an optional thing") {
                     expect(try! f(123)) == .Some("123")
-                    expect(executed) == true;
+                    expect(executed) == true
                 }
 
                 it("will not execute and will return nil") {
                     object = nil
                     expect(try! f(123)).to(beNil())
-                    expect(executed) == false;
+                    expect(executed) == false
                 }
             }
 
