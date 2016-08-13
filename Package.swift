@@ -1,10 +1,4 @@
-//
-//  Package.swift
-//  Weakify
-//
-//  Created by Kevin Lundberg on 1/5/16.
-//  Copyright © 2016 Kevin Lundberg. All rights reserved.
-//
+//  Copyright © 2016 Kevin Lundberg. See LICENSE file for more information
 
 import PackageDescription
 

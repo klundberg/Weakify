@@ -1,10 +1,4 @@
-//
-//  Weakify.h
-//  Weakify
-//
-//  Created by Kevin Lundberg on 9/9/15.
-//  Copyright © 2015 Kevin Lundberg. All rights reserved.
-//
+//  Copyright (c) 2015-2016 Kevin Lundberg. See LICENSE file for more info
 
 //! Project version number for Weakify.
 extern double WeakifyVersionNumber;

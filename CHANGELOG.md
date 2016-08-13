@@ -1,5 +1,8 @@
 # Changelog
 
+* 0.2.3
+ * Removed redundant weakify function, made small syntactic changes in prep for swift 3
+
 * 0.2.2
  * Added support for building Weakify with the swift package manager.
 
