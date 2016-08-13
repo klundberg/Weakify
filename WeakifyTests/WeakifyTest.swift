@@ -276,4 +276,88 @@ class WeakifyTest: XCTestCase {
 
         XCTAssertThrowsError(try weakify(object, f)(123))
     }
+
+    // MARK: - U as? V -> Void
+
+    var value: Int?
+
+    func testUasVWillExecuteIfNotNil() {
+        func f(object: Thing) -> (Int?) -> Void {
+            return { int in self.value = int; self.executed = true }
+        }
+
+        let fn: Any -> Void = weakify(object, f)
+        fn(123)
+
+        XCTAssertTrue(executed)
+        XCTAssertEqual(123, value)
+    }
+
+    func testUasVThrowsWillExecuteIfNotNil() {
+        func f(object: Thing) -> (Int?) throws -> Void {
+            return { int in self.value = int; self.executed = true }
+        }
+
+        let fn: Any throws -> Void = weakify(object, f)
+        try! fn(123)
+
+        XCTAssertTrue(executed)
+        XCTAssertEqual(123, value)
+    }
+
+    func testUasVWillGetNilIfParameterCannotBeCastAsU() {
+        func f(object: Thing) -> (Int?) -> Void {
+            return { int in self.value = int; self.executed = true }
+        }
+
+        weakify(object, f)("123")
+
+        XCTAssertTrue(executed)
+        XCTAssertEqual(nil, value)
+    }
+
+    func testUasVThrowsWillGetNilIfParameterCannotBeCastAsU() {
+        func f(object: Thing) -> (Int?) throws -> Void {
+            return { int in self.value = int; self.executed = true }
+        }
+
+        try! weakify(object, f)("123")
+
+        XCTAssertTrue(executed)
+        XCTAssertEqual(nil, value)
+    }
+
+    func testUasVWillNotExecuteIfNil() {
+        func f(object: Thing) -> (Int?) -> Void {
+            return { int in self.value = int; self.executed = true }
+        }
+
+        let fn: Any -> Void = weakify(object, f)
+        object = nil
+        fn("123")
+
+        XCTAssertFalse(executed)
+        XCTAssertEqual(nil, value)
+    }
+
+    func testUasVThrowsWillNotExecuteIfNil() {
+        func f(object: Thing) -> (Int?) throws -> Void {
+            return { int in self.value = int; self.executed = true }
+        }
+
+        let fn: Any throws -> Void = weakify(object, f)
+        object = nil
+        try! fn("123")
+
+        XCTAssertFalse(executed)
+        XCTAssertEqual(nil, value)
+    }
+
+    func testUasVThrowsWillThrowIfNotNil() {
+        func f(object: Thing) -> (Int?) throws -> Void {
+            return { _ in throw TestError.Error }
+        }
+
+        XCTAssertThrowsError(try weakify(object, f)("123"))
+    }
 }
