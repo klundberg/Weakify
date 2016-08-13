@@ -129,7 +129,7 @@ class WeakifyTest: XCTestCase {
         XCTAssertThrowsError(try fn(123))
     }
 
-    // MARK - U -> Void
+    // MARK: - U -> Void
 
     func testUToVoidWillExecuteIfNotNil() {
         func f(object: Thing) -> (Int) -> Void {
@@ -181,5 +181,52 @@ class WeakifyTest: XCTestCase {
         }
 
         XCTAssertThrowsError(try weakify(object, f)(123))
+    }
+
+    // MARK: - () -> U
+
+    func testVoidToUWillExecuteIfNotNil() {
+        func f(object: Thing) -> () -> Int {
+            return { return 123 }
+        }
+
+        XCTAssertEqual(123, weakify(object, f)())
+    }
+
+    func testVoidThrowsToUWillExecuteIfNotNil() {
+        func f(object: Thing) -> () throws -> Int {
+            return { return 123 }
+        }
+
+        XCTAssertEqual(123, try! weakify(object, f)())
+    }
+
+    func testVoidToUWillNotExecuteIfNil() {
+        func f(object: Thing) -> () -> Int {
+            return { return 123 }
+        }
+
+        let fn = weakify(object, f)
+        object = nil
+        XCTAssertEqual(nil, fn())
+    }
+
+    func testVoidThrowsToUWillNotExecuteIfNil() {
+        func f(object: Thing) -> () throws -> Int {
+            return { return 123 }
+        }
+
+        let fn = weakify(object, f)
+        object = nil
+        XCTAssertEqual(nil, try! fn())
+    }
+
+
+    func testVoidThrowsToUWillThrowIfNotNil() {
+        func f(object: Thing) -> () throws -> Int {
+            return { throw TestError.Error }
+        }
+
+        XCTAssertThrowsError(try weakify(object, f)())
     }
 }
