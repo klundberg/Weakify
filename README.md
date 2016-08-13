@@ -101,7 +101,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 # Swift 2:
-pod "Weakify", "~> 0.2.2"
+pod "Weakify", "~> 0.2.3"
 
 # Swift 1.2:
 pod "Weakify", "~> 0.1.3"
@@ -113,7 +113,7 @@ Weakify can be integrated with [Carthage](https://github.com/Carthage/Carthage).
 
 ```
 # Swift 2:
-github "klundberg/Weakify" ~> 0.2.2
+github "klundberg/Weakify" ~> 0.2.3
 
 # Swift 1.2:
 github "klundberg/Weakify" ~> 0.1.3
@@ -124,7 +124,7 @@ github "klundberg/Weakify" ~> 0.1.3
 Add the following line to your dependencies list in your `Package.swift` file:
 
 ```
-.Package(url: "https://github.com/klundberg/weakify.git", versions:Version(0,2,2)..<Version(0,3,0)),
+.Package(url: "https://github.com/klundberg/weakify.git", versions:Version(0,2,3)..<Version(0,3,0)),
 ```
 
 ### Manual installation
