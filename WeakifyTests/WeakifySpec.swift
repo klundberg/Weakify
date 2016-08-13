@@ -4,8 +4,8 @@ import Quick
 import Nimble
 import Weakify
 
-class Thing {}
-enum Error: ErrorType { case Error }
+private class Thing {}
+private enum Error: ErrorType { case Error }
 
 class WeakifySpec: QuickSpec {
     override func spec() {

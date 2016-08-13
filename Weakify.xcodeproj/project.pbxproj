@@ -12,6 +12,9 @@
 		0076B4B71B8138DE0012CCD8 /* WeakifySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */; };
 		09BF0CCC345082344286DF27 /* Pods_Weakify_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00A7F29E838C3DF0BEC8AEA /* Pods_Weakify_tvOSTests.framework */; };
 		5679825D54A278E42FDC69D0 /* Pods_Weakify_OSXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378C9BF682CF9FF01D573166 /* Pods_Weakify_OSXTests.framework */; };
+		79238E8D1D5D53EE00DFCCEC /* WeakifyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */; };
+		79238E8E1D5D53EE00DFCCEC /* WeakifyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */; };
+		79238E8F1D5D53EE00DFCCEC /* WeakifyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */; };
 		792982EB1BE1D967006CCA66 /* Weakify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792982E11BE1D966006CCA66 /* Weakify.framework */; };
 		792982F81BE1D98D006CCA66 /* Weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B21B8138150012CCD8 /* Weakify.swift */; };
 		792982F91BE1D992006CCA66 /* Weakify.h in Headers */ = {isa = PBXBuildFile; fileRef = 0076B4951B8137070012CCD8 /* Weakify.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,6 +67,7 @@
 		0076B4B91B8189360012CCD8 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		378C9BF682CF9FF01D573166 /* Pods_Weakify_OSXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weakify_OSXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FDBD52D36BD4B7B63A77828 /* Pods-Weakify-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weakify-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weakify-tvOSTests/Pods-Weakify-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakifyTest.swift; sourceTree = "<group>"; };
 		792982E11BE1D966006CCA66 /* Weakify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Weakify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		792982EA1BE1D966006CCA66 /* Weakify-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weakify-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		795CFEF71BA132AD008B20FD /* Weakify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Weakify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +193,7 @@
 			children = (
 				0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */,
 				0076B4A01B8137070012CCD8 /* Supporting Files */,
+				79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */,
 			);
 			path = WeakifyTests;
 			sourceTree = "<group>";
@@ -677,6 +682,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79238E8D1D5D53EE00DFCCEC /* WeakifyTest.swift in Sources */,
 				0076B4B71B8138DE0012CCD8 /* WeakifySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -693,6 +699,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79238E8F1D5D53EE00DFCCEC /* WeakifyTest.swift in Sources */,
 				792982FA1BE1D99B006CCA66 /* WeakifySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -717,6 +724,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79238E8E1D5D53EE00DFCCEC /* WeakifyTest.swift in Sources */,
 				795D9DBF1B968AE100C428E4 /* WeakifySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
