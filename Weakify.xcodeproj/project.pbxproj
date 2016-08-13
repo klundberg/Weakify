@@ -9,24 +9,18 @@
 /* Begin PBXBuildFile section */
 		0076B4961B8137070012CCD8 /* Weakify.h in Headers */ = {isa = PBXBuildFile; fileRef = 0076B4951B8137070012CCD8 /* Weakify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0076B4B31B8138150012CCD8 /* Weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B21B8138150012CCD8 /* Weakify.swift */; };
-		0076B4B71B8138DE0012CCD8 /* WeakifySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */; };
-		09BF0CCC345082344286DF27 /* Pods_Weakify_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00A7F29E838C3DF0BEC8AEA /* Pods_Weakify_tvOSTests.framework */; };
-		5679825D54A278E42FDC69D0 /* Pods_Weakify_OSXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378C9BF682CF9FF01D573166 /* Pods_Weakify_OSXTests.framework */; };
 		79238E8D1D5D53EE00DFCCEC /* WeakifyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */; };
 		79238E8E1D5D53EE00DFCCEC /* WeakifyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */; };
 		79238E8F1D5D53EE00DFCCEC /* WeakifyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */; };
 		792982EB1BE1D967006CCA66 /* Weakify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792982E11BE1D966006CCA66 /* Weakify.framework */; };
 		792982F81BE1D98D006CCA66 /* Weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B21B8138150012CCD8 /* Weakify.swift */; };
 		792982F91BE1D992006CCA66 /* Weakify.h in Headers */ = {isa = PBXBuildFile; fileRef = 0076B4951B8137070012CCD8 /* Weakify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		792982FA1BE1D99B006CCA66 /* WeakifySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */; };
 		7929830A1BE1DE22006CCA66 /* Weakify.h in Headers */ = {isa = PBXBuildFile; fileRef = 0076B4951B8137070012CCD8 /* Weakify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7929830B1BE1DE2B006CCA66 /* Weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B21B8138150012CCD8 /* Weakify.swift */; };
 		795D9DBD1B968ACC00C428E4 /* Weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B21B8138150012CCD8 /* Weakify.swift */; };
 		795D9DBE1B968ACF00C428E4 /* Weakify.h in Headers */ = {isa = PBXBuildFile; fileRef = 0076B4951B8137070012CCD8 /* Weakify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		795D9DBF1B968AE100C428E4 /* WeakifySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */; };
 		795D9DC01B968D1200C428E4 /* Weakify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795D9DA41B968A7C00C428E4 /* Weakify.framework */; };
 		795D9DC11B968D1A00C428E4 /* Weakify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0076B4901B8137070012CCD8 /* Weakify.framework */; };
-		A468BCB1A79924CC99941C1F /* Pods_Weakify_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B5DB3E8AC3F618A2DFB704 /* Pods_Weakify_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +57,7 @@
 		0076B4AD1B8137690012CCD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0076B4AE1B8137690012CCD8 /* Weakify.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Weakify.podspec; sourceTree = "<group>"; };
 		0076B4B21B8138150012CCD8 /* Weakify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weakify.swift; sourceTree = "<group>"; };
-		0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakifySpec.swift; sourceTree = "<group>"; };
 		0076B4B91B8189360012CCD8 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		378C9BF682CF9FF01D573166 /* Pods_Weakify_OSXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weakify_OSXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FDBD52D36BD4B7B63A77828 /* Pods-Weakify-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weakify-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weakify-tvOSTests/Pods-Weakify-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakifyTest.swift; sourceTree = "<group>"; };
 		792982E11BE1D966006CCA66 /* Weakify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Weakify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		792982EA1BE1D966006CCA66 /* Weakify-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weakify-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,13 +66,6 @@
 		795D9DAE1B968A7C00C428E4 /* Weakify-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weakify-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		795D9DD91B969BA900C428E4 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		7980F4A61C3CB5DE00511EB3 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		8003561416F09546738329D0 /* Pods-Weakify-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weakify-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weakify-tvOSTests/Pods-Weakify-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		A00A7F29E838C3DF0BEC8AEA /* Pods_Weakify_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weakify_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0E542B263D19D5C8D38F61C /* Pods-Weakify-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weakify-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weakify-iOSTests/Pods-Weakify-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		D2400C61E22A8D60ECCC23CC /* Pods-Weakify-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weakify-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weakify-iOSTests/Pods-Weakify-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E9B5DB3E8AC3F618A2DFB704 /* Pods_Weakify_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weakify_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDB63B2CBAA02779F392C2EB /* Pods-Weakify-OSXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weakify-OSXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weakify-OSXTests/Pods-Weakify-OSXTests.debug.xcconfig"; sourceTree = "<group>"; };
-		EF6EA5B4DB9E25146FD99765 /* Pods-Weakify-OSXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weakify-OSXTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weakify-OSXTests/Pods-Weakify-OSXTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +81,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				795D9DC11B968D1A00C428E4 /* Weakify.framework in Frameworks */,
-				A468BCB1A79924CC99941C1F /* Pods_Weakify_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +96,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				792982EB1BE1D967006CCA66 /* Weakify.framework in Frameworks */,
-				09BF0CCC345082344286DF27 /* Pods_Weakify_tvOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +118,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				795D9DC01B968D1200C428E4 /* Weakify.framework in Frameworks */,
-				5679825D54A278E42FDC69D0 /* Pods_Weakify_OSXTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +131,6 @@
 				0076B49F1B8137070012CCD8 /* WeakifyTests */,
 				0076B4B81B813A390012CCD8 /* Project Information */,
 				0076B4911B8137070012CCD8 /* Products */,
-				6D181517DA20CFADF58C5D85 /* Pods */,
-				13F70C32E3A3B0CB4D5393BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */,
-				0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */,
 				0076B4A01B8137070012CCD8 /* Supporting Files */,
 			);
 			path = WeakifyTests;
@@ -217,29 +195,6 @@
 				7980F4A61C3CB5DE00511EB3 /* Package.swift */,
 			);
 			name = "Project Information";
-			sourceTree = "<group>";
-		};
-		13F70C32E3A3B0CB4D5393BC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				378C9BF682CF9FF01D573166 /* Pods_Weakify_OSXTests.framework */,
-				E9B5DB3E8AC3F618A2DFB704 /* Pods_Weakify_iOSTests.framework */,
-				A00A7F29E838C3DF0BEC8AEA /* Pods_Weakify_tvOSTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6D181517DA20CFADF58C5D85 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EDB63B2CBAA02779F392C2EB /* Pods-Weakify-OSXTests.debug.xcconfig */,
-				EF6EA5B4DB9E25146FD99765 /* Pods-Weakify-OSXTests.release.xcconfig */,
-				D2400C61E22A8D60ECCC23CC /* Pods-Weakify-iOSTests.debug.xcconfig */,
-				A0E542B263D19D5C8D38F61C /* Pods-Weakify-iOSTests.release.xcconfig */,
-				6FDBD52D36BD4B7B63A77828 /* Pods-Weakify-tvOSTests.debug.xcconfig */,
-				8003561416F09546738329D0 /* Pods-Weakify-tvOSTests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,12 +257,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0076B4A91B8137070012CCD8 /* Build configuration list for PBXNativeTarget "Weakify-iOSTests" */;
 			buildPhases = (
-				79BA72FAE9C34EE3B929A5C0 /* [CP] Check Pods Manifest.lock */,
 				0076B4971B8137070012CCD8 /* Sources */,
 				0076B4981B8137070012CCD8 /* Frameworks */,
 				0076B4991B8137070012CCD8 /* Resources */,
-				289FAABC6CC39F1A3575EF9C /* [CP] Embed Pods Frameworks */,
-				58D9A758D55D88C836711C51 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,12 +293,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 792982F71BE1D967006CCA66 /* Build configuration list for PBXNativeTarget "Weakify-tvOSTests" */;
 			buildPhases = (
-				78A21FBAEFC69CA241295127 /* [CP] Check Pods Manifest.lock */,
 				792982E61BE1D966006CCA66 /* Sources */,
 				792982E71BE1D966006CCA66 /* Frameworks */,
 				792982E81BE1D966006CCA66 /* Resources */,
-				E3F7CFB44A9061423AAE76F3 /* [CP] Embed Pods Frameworks */,
-				B8A5674AE82704487E1B8B14 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -398,12 +347,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 795D9DBA1B968A7C00C428E4 /* Build configuration list for PBXNativeTarget "Weakify-OSXTests" */;
 			buildPhases = (
-				90AE57249FA15B985EC50EF8 /* [CP] Check Pods Manifest.lock */,
 				795D9DAA1B968A7C00C428E4 /* Sources */,
 				795D9DAB1B968A7C00C428E4 /* Frameworks */,
 				795D9DAC1B968A7C00C428E4 /* Resources */,
-				8C506934934604687D411229 /* [CP] Embed Pods Frameworks */,
-				2285C4A1D8CF1A081142B8D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -531,144 +477,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2285C4A1D8CF1A081142B8D8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Weakify-OSXTests/Pods-Weakify-OSXTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		289FAABC6CC39F1A3575EF9C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Weakify-iOSTests/Pods-Weakify-iOSTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		58D9A758D55D88C836711C51 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Weakify-iOSTests/Pods-Weakify-iOSTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		78A21FBAEFC69CA241295127 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		79BA72FAE9C34EE3B929A5C0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8C506934934604687D411229 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Weakify-OSXTests/Pods-Weakify-OSXTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		90AE57249FA15B985EC50EF8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B8A5674AE82704487E1B8B14 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Weakify-tvOSTests/Pods-Weakify-tvOSTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E3F7CFB44A9061423AAE76F3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Weakify-tvOSTests/Pods-Weakify-tvOSTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		0076B48B1B8137070012CCD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -683,7 +491,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				79238E8D1D5D53EE00DFCCEC /* WeakifyTest.swift in Sources */,
-				0076B4B71B8138DE0012CCD8 /* WeakifySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,7 +507,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				79238E8F1D5D53EE00DFCCEC /* WeakifyTest.swift in Sources */,
-				792982FA1BE1D99B006CCA66 /* WeakifySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,7 +531,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				79238E8E1D5D53EE00DFCCEC /* WeakifyTest.swift in Sources */,
-				795D9DBF1B968AE100C428E4 /* WeakifySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -889,7 +694,6 @@
 		};
 		0076B4AA1B8137070012CCD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2400C61E22A8D60ECCC23CC /* Pods-Weakify-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -906,7 +710,6 @@
 		};
 		0076B4AB1B8137070012CCD8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0E542B263D19D5C8D38F61C /* Pods-Weakify-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WeakifyTests/Info.plist;
@@ -964,7 +767,6 @@
 		};
 		792982F41BE1D967006CCA66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FDBD52D36BD4B7B63A77828 /* Pods-Weakify-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -980,7 +782,6 @@
 		};
 		792982F51BE1D967006CCA66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8003561416F09546738329D0 /* Pods-Weakify-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WeakifyTests/Info.plist;
@@ -1088,7 +889,6 @@
 		};
 		795D9DBB1B968A7C00C428E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDB63B2CBAA02779F392C2EB /* Pods-Weakify-OSXTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1109,7 +909,6 @@
 		};
 		795D9DBC1B968A7C00C428E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF6EA5B4DB9E25146FD99765 /* Pods-Weakify-OSXTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;

@@ -1,10 +1,4 @@
-//
-//  Weakify.swift
-//  Weakify
-//
-//  Created by Kevin Lundberg on 8/16/15.
-//  Copyright (c) 2015 Kevin Lundberg. All rights reserved.
-//
+//  Copyright (c) 2015-2016 Kevin Lundberg. See LICENSE file for more info
 
 /// May be applied to any method that takes no arguments and returns none. The resulting closure can accept an argument which will simply be ignored (useful in cases like `NSNotificationCenter` when you don't care about the `notification` argument), or the type may also represent `Void`, meaning no input arguments are necessary.
 ///
