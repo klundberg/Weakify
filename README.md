@@ -69,12 +69,6 @@ func weakify <T: AnyObject, U>(owner: T, _ f: T -> U throws ->()) -> U throws ->
 may be applied to a method that accepts an argument and returns none, which the resulting closure mirrors.
 
 ```swift
-func weakify <T: AnyObject, U>(owner: T, _ f: T -> () -> U) -> () -> U?
-func weakify <T: AnyObject, U>(owner: T, _ f: T -> () throws -> U) -> () throws -> U?
-```
-may be applied to a function that returns some value. The resulting closure must return optional, since if owner is deallocated before it is called there's nothing else it can return.
-
-```swift
 func weakify <T: AnyObject, U, V>(owner: T, _ f: T -> U -> V) -> U -> V?
 func weakify <T: AnyObject, U, V>(owner: T, _ f: T -> U throws -> V) -> U throws -> V?
 ```
