@@ -191,9 +191,9 @@
 		0076B49F1B8137070012CCD8 /* WeakifyTests */ = {
 			isa = PBXGroup;
 			children = (
+				79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */,
 				0076B4B61B8138DE0012CCD8 /* WeakifySpec.swift */,
 				0076B4A01B8137070012CCD8 /* Supporting Files */,
-				79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */,
 			);
 			path = WeakifyTests;
 			sourceTree = "<group>";
