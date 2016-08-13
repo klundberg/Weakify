@@ -3,11 +3,11 @@ import XCTest
 import Weakify
 
 private class Thing {}
-private enum Error: ErrorType { case Error }
+private enum TestError: ErrorType { case Error }
 
 class WeakifyTest: XCTestCase {
 
-    private var object: Thing = Thing()
+    private var object: Thing!
     var executed = false
 
     override func setUp() {
@@ -37,5 +37,36 @@ class WeakifyTest: XCTestCase {
         XCTAssertTrue(executed)
     }
 
+    func testVoidToVoidWillNotExecuteIfNil() {
+        func f(object: Thing) -> () -> Void {
+            return { self.executed = true }
+        }
+
+        let fn = weakify(object, f)
+        object = nil
+        fn()
+
+        XCTAssertFalse(executed)
+    }
+
+    func testVoidThrowsToVoidWillNotExecuteIfNil() {
+        func f(object: Thing) -> () throws -> Void {
+            return { self.executed = true }
+        }
+
+        let fn = weakify(object, f)
+        object = nil
+        try! fn()
+
+        XCTAssertFalse(executed)
+    }
+
+    func testVoidThrowsToVoidWillThrowIfNotNil() {
+        func f(object: Thing) -> () throws -> Void {
+            return { throw TestError.Error }
+        }
+
+        XCTAssertThrowsError(try weakify(object, f)())
+    }
     
 }
