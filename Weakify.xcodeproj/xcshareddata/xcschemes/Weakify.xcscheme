@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "792982E01BE1D966006CCA66"
+               BlueprintIdentifier = "0076B48F1B8137070012CCD8"
                BuildableName = "Weakify.framework"
-               BlueprintName = "Weakify-tvOS"
+               BlueprintName = "Weakify"
+               ReferencedContainer = "container:Weakify.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0076B49A1B8137070012CCD8"
+               BuildableName = "Weakify-Tests.xctest"
+               BlueprintName = "Weakify-Tests"
                ReferencedContainer = "container:Weakify.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,9 +47,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "792982E91BE1D966006CCA66"
-               BuildableName = "Weakify-tvOSTests.xctest"
-               BlueprintName = "Weakify-tvOSTests"
+               BlueprintIdentifier = "0076B49A1B8137070012CCD8"
+               BuildableName = "Weakify-Tests.xctest"
+               BlueprintName = "Weakify-Tests"
                ReferencedContainer = "container:Weakify.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,9 +57,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "792982E01BE1D966006CCA66"
+            BlueprintIdentifier = "0076B48F1B8137070012CCD8"
             BuildableName = "Weakify.framework"
-            BlueprintName = "Weakify-tvOS"
+            BlueprintName = "Weakify"
             ReferencedContainer = "container:Weakify.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +79,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "792982E01BE1D966006CCA66"
+            BlueprintIdentifier = "0076B48F1B8137070012CCD8"
             BuildableName = "Weakify.framework"
-            BlueprintName = "Weakify-tvOS"
+            BlueprintName = "Weakify"
             ReferencedContainer = "container:Weakify.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,9 +97,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "792982E01BE1D966006CCA66"
+            BlueprintIdentifier = "0076B48F1B8137070012CCD8"
             BuildableName = "Weakify.framework"
-            BlueprintName = "Weakify-tvOS"
+            BlueprintName = "Weakify"
             ReferencedContainer = "container:Weakify.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
