@@ -7,7 +7,7 @@
 ///
 /// - returns: A function where owner is weakly applied to the given function f. If owner is nil, nothing happens. If owner is not nil, calls `f(owner)()`
 #if swift(>=3.0)
-public func weakify <T: AnyObject, U>(_ owner: T, _ f: (T) -> () -> Void) -> (U) -> Void {
+public func weakify <T: AnyObject, U>(_ owner: T, _ f: @escaping (T) -> () -> Void) -> (U) -> Void {
     return { [weak owner] _ in
         if let this = owner {
             f(this)()
@@ -31,7 +31,7 @@ public func weakify <T: AnyObject, U>(owner: T, _ f: (T) -> () -> Void) -> (U) -
 ///
 /// - returns: A function where owner is weakly applied to the given function f. If owner is nil, nothing happens. If owner is not nil, calls `try f(owner)()`
 #if swift(>=3.0)
-public func weakify <T: AnyObject, U>(_ owner: T, _ f: (T) -> () throws -> Void) -> (U) throws -> Void {
+public func weakify <T: AnyObject, U>(_ owner: T, _ f: @escaping (T) -> () throws -> Void) -> (U) throws -> Void {
     return { [weak owner] _ in
         if let this = owner {
             try f(this)()
@@ -55,7 +55,7 @@ public func weakify <T: AnyObject, U>(owner: T, _ f: (T) -> () throws -> Void) -
 ///
 /// - returns: A function where owner is weakly applied to the given function f. If owner is nil, nothing happens. If owner is not nil, calls `f(owner)($0)`
 #if swift(>=3.0)
-public func weakify <T: AnyObject, U>(_ owner: T, _ f: (T) -> (U) -> Void) -> (U) -> Void {
+public func weakify <T: AnyObject, U>(_ owner: T, _ f: @escaping (T) -> (U) -> Void) -> (U) -> Void {
     return { [weak owner] obj in
         if let this = owner {
             f(this)(obj)
@@ -79,7 +79,7 @@ public func weakify <T: AnyObject, U>(owner: T, _ f: (T) -> (U) -> Void) -> (U) 
 ///
 /// - returns: A function where owner is weakly applied to the given function f. If owner is nil, nothing happens. If owner is not nil, calls `try f(owner)($0)`
 #if swift(>=3.0)
-public func weakify <T: AnyObject, U>(_ owner: T, _ f: (T) -> (U) throws -> Void) -> (U) throws -> Void {
+public func weakify <T: AnyObject, U>(_ owner: T, _ f: @escaping (T) -> (U) throws -> Void) -> (U) throws -> Void {
     return { [weak owner] obj in
         if let this = owner {
             try f(this)(obj)
@@ -103,7 +103,7 @@ public func weakify <T: AnyObject, U>(owner: T, _ f: (T) -> (U) throws -> Void) 
 ///
 /// - returns: A function where owner is weakly applied to the given function f. If owner is nil, returns nil. If owner is not nil, returns `f(owner)($0)`
 #if swift(>=3.0)
-public func weakify <T: AnyObject, U, V>(_ owner: T, _ f: (T) -> (U) -> V) -> (U) -> V? {
+public func weakify <T: AnyObject, U, V>(_ owner: T, _ f: @escaping (T) -> (U) -> V) -> (U) -> V? {
     return { [weak owner] obj in
         if let this = owner {
             return f(this)(obj)
@@ -131,7 +131,7 @@ public func weakify <T: AnyObject, U, V>(owner: T, _ f: (T) -> (U) -> V) -> (U) 
 ///
 /// - returns: A function where owner is weakly applied to the given function f. If owner is nil, returns nil. If owner is not nil, returns `f(owner)($0)`
 #if swift(>=3.0)
-public func weakify <T: AnyObject, U, V>(_ owner: T, _ f: (T) -> (U) throws -> V) -> (U) throws -> V? {
+public func weakify <T: AnyObject, U, V>(_ owner: T, _ f: @escaping (T) -> (U) throws -> V) -> (U) throws -> V? {
     return { [weak owner] obj in
         if let this = owner {
             return try f(this)(obj)
@@ -159,7 +159,7 @@ public func weakify <T: AnyObject, U, V>(owner: T, _ f: (T) -> (U) throws -> V) 
 ///
 /// - returns: A function where owner is weakly applied to the given function f. If owner is nil, nothing happens. If owner is not nil, returns `f(owner)($0 as? U)`
 #if swift(>=3.0)
-public func weakify <T: AnyObject, U, V>(_ owner: T, _ f: (T) -> (U?) -> Void) -> (V) -> Void {
+public func weakify <T: AnyObject, U, V>(_ owner: T, _ f: @escaping (T) -> (U?) -> Void) -> (V) -> Void {
     return { [weak owner] obj in
         if let this = owner {
             f(this)(obj as? U)
@@ -183,7 +183,7 @@ public func weakify <T: AnyObject, U, V>(owner: T, _ f: (T) -> (U?) -> Void) -> 
 ///
 /// - returns: A function where owner is weakly applied to the given function f. If owner is nil, nothing happens. If owner is not nil, returns `try f(owner)($0 as? U)`
 #if swift(>=3.0)
-public func weakify <T: AnyObject, U, V>(_ owner: T, _ f: (T) -> (U?) throws -> Void) -> (V) throws -> Void {
+public func weakify <T: AnyObject, U, V>(_ owner: T, _ f: @escaping (T) -> (U?) throws -> Void) -> (V) throws -> Void {
     return { [weak owner] obj in
         if let this = owner {
             try f(this)(obj as? U)
