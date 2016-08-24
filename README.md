@@ -46,11 +46,11 @@ which breaks the retain cycle. However, having to create a new closure whenever 
 
 ```swift
 func registerCallback() {
-	callback = weakify(self, self.dynamicType.doSomething)
+	callback = weakify(self, type(of: self).doSomething)
 }
 ```
 
-weakify separates the instance of the object from the method using static method references (you can reference the `doSomething` method statically with `Thing.doSomething` or `self.dynamicType.doSomething`, which has a type of `(Thing) -> () -> ()`). In this example `weakify` weakly applies self to the curried function's first argument, returning a closure that has the type `() -> ()` which, when called, will execute the doSomething method *only if `self` has not been deallocated* (much like the manual closure that weakly captures self defined earlier).
+weakify separates the instance of the object from the method using static method references (you can reference the `doSomething` method statically with `Thing.doSomething` or `type(of: self).doSomething`, which has a type of `(Thing) -> () -> ()`). In this example `weakify` weakly applies self to the curried function's first argument, returning a closure that has the type `() -> ()` which, when called, will execute the doSomething method *only if `self` has not been deallocated* (much like the manual closure that weakly captures self defined earlier).
 
 ## Usage
 
