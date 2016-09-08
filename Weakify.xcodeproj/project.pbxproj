@@ -80,37 +80,21 @@
 		0076B4921B8137070012CCD8 /* Weakify */ = {
 			isa = PBXGroup;
 			children = (
-				0076B4B21B8138150012CCD8 /* Weakify.swift */,
+				0076B4941B8137070012CCD8 /* Info.plist */,
 				0076B4951B8137070012CCD8 /* Weakify.h */,
-				0076B4931B8137070012CCD8 /* Supporting Files */,
+				0076B4B21B8138150012CCD8 /* Weakify.swift */,
 			);
 			name = Weakify;
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		0076B4931B8137070012CCD8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0076B4941B8137070012CCD8 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		0076B49F1B8137070012CCD8 /* WeakifyTests */ = {
 			isa = PBXGroup;
 			children = (
+				0076B4A11B8137070012CCD8 /* Info.plist */,
 				79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */,
-				0076B4A01B8137070012CCD8 /* Supporting Files */,
 			);
 			path = WeakifyTests;
-			sourceTree = "<group>";
-		};
-		0076B4A01B8137070012CCD8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0076B4A11B8137070012CCD8 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0076B4B81B813A390012CCD8 /* Project Information */ = {

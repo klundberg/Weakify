@@ -82,7 +82,7 @@ may be applied to a function that accepts an optional value. The resulting closu
 
 ## Requirements
 
-* 0.2.x is supported on Xcode 7/Swift 2
+* 0.2.x is supported on Xcode 7/Swift 2.x
 * 0.1.x is supported on Xcode 6.3+/Swift 1.2
 * iOS 8+/OS X 10.9+/watchOS 2+
 
@@ -94,7 +94,7 @@ Weakify is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-# Swift 2:
+# Swift 2.x:
 pod "Weakify", "~> 0.2.3"
 
 # Swift 1.2:
@@ -106,7 +106,7 @@ pod "Weakify", "~> 0.1.3"
 Weakify can be integrated with [Carthage](https://github.com/Carthage/Carthage). Add the following to your Cartfile to use it:
 
 ```
-# Swift 2:
+# Swift 2.x:
 github "klundberg/Weakify" ~> 0.2.3
 
 # Swift 1.2:
