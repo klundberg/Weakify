@@ -20,7 +20,7 @@ class Thing {
     }
 
     var callback: () -> Void = {}
-    
+
     func registerCallback() {
         callback = self.doSomething
     }
@@ -46,54 +46,57 @@ which breaks the retain cycle. However, having to create a new closure whenever 
 
 ```swift
 func registerCallback() {
-	callback = weakify(self, self.dynamicType.doSomething)
+	callback = weakify(self, type(of: self).doSomething)
 }
 ```
 
-weakify separates the instance of the object from the method using static method references (you can reference the `doSomething` method statically with `Thing.doSomething` or `self.dynamicType.doSomething`, which has a type of `(Thing) -> () -> ()`). In this example `weakify` weakly applies self to the curried function's first argument, returning a closure that has the type `() -> ()` which, when called, will execute the doSomething method *only if `self` has not been deallocated* (much like the manual closure that weakly captures self defined earlier).
+`weakify()` separates the instance of the object from the method using static method references (you can reference the `doSomething` method statically with `Thing.doSomething` or `type(of: self).doSomething`, which has a type of `(Thing) -> () -> ()`). In this example `weakify` weakly applies self to the curried function's first argument, returning a closure that has the type `() -> ()` which, when called, will execute the doSomething method *only if `self` has not been deallocated* (much like the manual closure that weakly captures self defined earlier).
 
 ## Usage
 
 There are a few variants of weakify available in this library for you to use:
 
 ```swift
-func weakify <T: AnyObject, U>(owner: T, _ f: T -> () -> ()) -> U -> ()
-func weakify <T: AnyObject, U>(owner: T, _ f: T -> () throws ->()) -> U throws -> ()
+func weakify <T: AnyObject, U>(_ owner: T, _ f: (T) -> () -> ()) -> (U) -> ()
+func weakify <T: AnyObject, U>(_ owner: T, _ f: (T) -> () throws ->()) -> (U) throws -> ()
 ```
 may be applied to any method that takes no arguments and returns none. The resulting closure can accept an argument which will simply be ignored (useful in cases like `NSNotificationCenter` when you don't care about the `notification` argument), or the type may also represent `Void`, meaning no input arguments are necessary.
 
 ```swift
-func weakify <T: AnyObject, U>(owner: T, _ f: T -> U -> ()) -> U -> ()
-func weakify <T: AnyObject, U>(owner: T, _ f: T -> U throws ->()) -> U throws -> ()
+func weakify <T: AnyObject, U>(_ owner: T, _ f: (T) -> (U) -> ()) -> (U) -> ()
+func weakify <T: AnyObject, U>(_ owner: T, _ f: (T) -> (U) throws ->()) -> (U) throws -> ()
 ```
 may be applied to a method that accepts an argument and returns none, which the resulting closure mirrors.
 
 ```swift
-func weakify <T: AnyObject, U, V>(owner: T, _ f: T -> U -> V) -> U -> V?
-func weakify <T: AnyObject, U, V>(owner: T, _ f: T -> U throws -> V) -> U throws -> V?
+func weakify <T: AnyObject, U, V>(_ owner: T, _ f: (T) -> (U) -> V) -> (U) -> V?
+func weakify <T: AnyObject, U, V>(_ owner: T, _ f: (T) -> (U) throws -> V) -> (U) throws -> V?
 ```
 may be applied to a function that accepts and returns something; effectively a union of the two previous cases.
 
 ```swift
-func weakify <T: AnyObject, U, V>(owner: T, _ f: T -> U? -> ()) -> V -> ()
-func weakify <T: AnyObject, U, V>(owner: T, _ f: T -> U? throws -> ()) -> V throws -> ()
+func weakify <T: AnyObject, U, V>(_ owner: T, _ f: (T) -> (U?) -> ()) -> (V) -> ()
+func weakify <T: AnyObject, U, V>(_ owner: T, _ f: (T) -> (U?) throws -> ()) -> (V) throws -> ()
 ```
 may be applied to a function that accepts an optional value. The resulting closure can have a completely different type for the input argument. If `owner` is not `nil` at call time, the argument to the resulting closure is conditionally cast from `V` to `U` with the `as?` operator, and the result of that is passed to the original function (which is why it must accept an optional, in case the cast fails).
 
 ## Requirements
 
-* 0.2.x is supported on Xcode 7/Swift 2.x
-* 0.1.x is supported on Xcode 6.3+/Swift 1.2
-* iOS 8+/OS X 10.9+/watchOS 2+
+* 0.3.0 is supported on Xcode 8/Swift 3 or on Xcode 7/Swift 2.2+
+* 0.2.3 is supported on Xcode 8/Swift 2.3 or on Xcode 7/Swift 2.x
+* 0.1.3 is supported on Xcode 6.3+/Swift 1.2
+* iOS 8+/OS X 10.9+/watchOS 2+/tvOS 9+
 
 ## Installation
 
 ### CocoaPods
 
-Weakify is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Weakify is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
+# Swift 2.2/3.x:
+pod "Weakify", "~> 0.3.0"
+
 # Swift 2.x:
 pod "Weakify", "~> 0.2.3"
 
@@ -101,36 +104,43 @@ pod "Weakify", "~> 0.2.3"
 pod "Weakify", "~> 0.1.3"
 ```
 
+Note: Weakify 0.3.0 can be built simultaneously with swift 2.2+ and Swift 3 using CocoaPods. This support may be removed in a future release.
+
 ### Carthage
 
 Weakify can be integrated with [Carthage](https://github.com/Carthage/Carthage). Add the following to your Cartfile to use it:
 
 ```
-# Swift 2.x:
+# Swift 3:
+github "klundberg/Weakify" ~> 0.3.0
+
+# Swift 2:
 github "klundberg/Weakify" ~> 0.2.3
 
 # Swift 1.2:
 github "klundberg/Weakify" ~> 0.1.3
 ```
 
+Note: Unlike with CocoaPods, if you are using Weakify in a Swift 2 project, you must use Weakify 0.2.3,
+
 ### Swift Package Manager
 
-Add the following line to your dependencies list in your `Package.swift` file:
+Add the following line to your dependencies list in your `Package.swift` file (altering the version as appropriate for your target swift version):
 
 ```
-.Package(url: "https://github.com/klundberg/weakify.git", versions:Version(0,2,3)..<Version(0,3,0)),
+.Package(url: "https://github.com/klundberg/weakify.git", versions:Version(0,3,0)..<Version(0,4,0)),
 ```
 
 ### Manual installation
 
-If you cannot use cocoapods (if you still need to target iOS 7 at a minimum for instance), the recommended way to install this is to simply manually copy weakify.swift from the repo into your project. You may also opt to reference this repo as a git submodule, which is an exercise I leave to you.
+If you cannot use CocoaPods (e.g. if you still need to target iOS 7 at a minimum for instance), the recommended way to install this is to simply manually copy weakify.swift from the repo into your project. You may also opt to reference this repo as a git submodule, which is an exercise I leave to you.
 
 ## Author
 
 Kevin Lundberg, kevin at klundberg dot com
 
 ## Contributions
-If you have additional variants of weakify you'd like to see, feel free to submit a pull request! Please include Quick-based unit tests with any changes. CocoaPods is required for running the unit tests.
+If you have additional variants of Weakify you'd like to see, feel free to submit a pull request! Please include unit tests with any changes.
 
 ## License
 
