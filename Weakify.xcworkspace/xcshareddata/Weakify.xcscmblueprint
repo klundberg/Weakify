@@ -12,7 +12,7 @@
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "95438028B10BBB846574013D29F154A00556A9D1" : "Weakify\/Carthage\/Checkouts\/Nimble\/",
     "D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64" : "Weakify\/Carthage\/Checkouts\/Quick\/",
-    "07EB882B204065208532B6A2CF80BC5A721EC62A" : "Weakify"
+    "07EB882B204065208532B6A2CF80BC5A721EC62A" : "weakify\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Weakify",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
