@@ -82,8 +82,8 @@ may be applied to a function that accepts an optional value. The resulting closu
 
 ## Requirements
 
-* 0.3.0 is supported on Xcode 8/Swift 3 or on Xcode 7/Swift 2.2+
-* 0.2.3 is supported on Xcode 8/Swift 2.3 or on Xcode 7/Swift 2.x
+* 0.3.0 is supported on Xcode 8/Swift 3, or on Xcode 7.3/Swift 2.2+
+* 0.2.3 is supported on Xcode 8/Swift 2.3, or on Xcode 7/Swift 2.x
 * 0.1.3 is supported on Xcode 6.3+/Swift 1.2
 * iOS 8+/OS X 10.9+/watchOS 2+/tvOS 9+
 

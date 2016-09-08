@@ -1,12 +1,17 @@
 # Changelog
 
+* 0.3.0
+ * Updated to support building with Xcode 8/Swift 3 (still supports Xcode 7.3/Swift 2.2 for now as well)
+
 * 0.2.3
- * Removed redundant weakify function, made small syntactic changes in prep for swift 3
+ * Removed redundant weakify function
+ * Removed duplicate targets, library builds with one universal target now.
+ * Upgraded project to support building in Xcode 8/Swift 2.3
 
 * 0.2.2
  * Added support for building Weakify with the swift package manager.
 
-* 0.2.1 
+* 0.2.1
  * tvOS framework added
  * watchOS framework fixed (did not properly contain weakify.swift)
 
