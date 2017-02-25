@@ -5,21 +5,16 @@ osx_image: xcode8.2
 language: objective-c
 
 env:
-- XCODE=1 DESTINATION='platform=OS X'
-- XCODE=1 DESTINATION='platform=iOS Simulator,name=iPhone SE'
-- XCODE=1 DESTINATION='platform=tvOS Simulator,name=Apple TV 1080p'
-- XCODE=0 DESTINATION=''
+- DESTINATION="platform=OS X"
+- DESTINATION="platform=iOS Simulator,name=iPhone SE"
+- DESTINATION="platform=tvOS Simulator,name=Apple TV 1080p"
+- DESTINATION=""
 
 before_install:
 - xcrun simctl delete DB794781-65A7-4884-8D00-AAC3CBD39A44 # workaround for https://github.com/travis-ci/travis-ci/issues/7031
 
 script:
-- if [ $XCODE -eq 1 ];
-- then
--   set -o pipefail && xcodebuild -scheme Weakify -destination "$DESTINATION" test analyze | xcpretty -c
-- else
--   swift test
-- fi
+- if [[ $DESTINATION = "" ]]; then swift test; else set -o pipefail && xcodebuild -scheme Weakify -destination "$DESTINATION" test analyze | xcpretty -c; fi
 - pod lib lint --quick
 
 after_success:

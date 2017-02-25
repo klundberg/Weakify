@@ -94,7 +94,8 @@
 				0076B4A11B8137070012CCD8 /* Info.plist */,
 				79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */,
 			);
-			path = WeakifyTests;
+			name = WeakifyTests;
+			path = Tests/WeakifyTests;
 			sourceTree = "<group>";
 		};
 		0076B4B81B813A390012CCD8 /* Distribution */ = {
@@ -385,7 +386,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = WeakifyTests/Info.plist;
+				INFOPLIST_FILE = Tests/WeakifyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,7 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = WeakifyTests/Info.plist;
+				INFOPLIST_FILE = Tests/WeakifyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
