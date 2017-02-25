@@ -63,7 +63,7 @@
 			children = (
 				0076B4921B8137070012CCD8 /* Weakify */,
 				0076B49F1B8137070012CCD8 /* WeakifyTests */,
-				0076B4B81B813A390012CCD8 /* Project Information */,
+				0076B4B81B813A390012CCD8 /* Distribution */,
 				0076B4911B8137070012CCD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,7 +97,7 @@
 			path = WeakifyTests;
 			sourceTree = "<group>";
 		};
-		0076B4B81B813A390012CCD8 /* Project Information */ = {
+		0076B4B81B813A390012CCD8 /* Distribution */ = {
 			isa = PBXGroup;
 			children = (
 				0076B4B91B8189360012CCD8 /* .travis.yml */,
@@ -107,7 +107,7 @@
 				795D9DD91B969BA900C428E4 /* CHANGELOG.md */,
 				7980F4A61C3CB5DE00511EB3 /* Package.swift */,
 			);
-			name = "Project Information";
+			name = Distribution;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
