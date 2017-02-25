@@ -35,6 +35,7 @@
 		0076B4B21B8138150012CCD8 /* Weakify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weakify.swift; sourceTree = "<group>"; };
 		0076B4B91B8189360012CCD8 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakifyTest.swift; sourceTree = "<group>"; };
+		794FF6B51E61F426003D0AAC /* codecov.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = codecov.yaml; sourceTree = "<group>"; };
 		795D9DD91B969BA900C428E4 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		7980F4A61C3CB5DE00511EB3 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +108,7 @@
 				0076B4AE1B8137690012CCD8 /* Weakify.podspec */,
 				795D9DD91B969BA900C428E4 /* CHANGELOG.md */,
 				7980F4A61C3CB5DE00511EB3 /* Package.swift */,
+				794FF6B51E61F426003D0AAC /* codecov.yaml */,
 			);
 			name = Distribution;
 			sourceTree = "<group>";
