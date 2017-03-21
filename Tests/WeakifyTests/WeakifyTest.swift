@@ -5,11 +5,7 @@ import Weakify
 
 private class Thing {}
 
-#if swift(>=3.0)
-private enum TestError: Error { case error }
-#else
-private enum TestError: ErrorType { case error }
-#endif
+private struct TestError: Error {}
 
 class WeakifyTest: XCTestCase {
 
@@ -71,7 +67,7 @@ class WeakifyTest: XCTestCase {
 
     func testVoidThrowsToVoidWillThrowIfNotNil() {
         func f(o object: Thing) -> () throws -> Void {
-            return { throw TestError.error }
+            return { throw TestError() }
         }
 
         XCTAssertThrowsError(try weakify(object, f)())
@@ -127,7 +123,7 @@ class WeakifyTest: XCTestCase {
 
     func testUThrowsToVoidIgnoringUWillThrowIfNotNil() {
         func f(o object: Thing) -> () throws -> Void {
-            return { throw TestError.error }
+            return { throw TestError() }
         }
 
         let fn: (Any) throws -> Void = weakify(object, f)
@@ -183,7 +179,7 @@ class WeakifyTest: XCTestCase {
 
     func testUThrowsToVoidWillThrowIfNotNil() {
         func f(o object: Thing) -> (Int) throws -> Void {
-            return { _ in throw TestError.error }
+            return { _ in throw TestError() }
         }
 
         XCTAssertThrowsError(try weakify(object, f)(123))
@@ -230,7 +226,7 @@ class WeakifyTest: XCTestCase {
 
     func testVoidThrowsToUWillThrowIfNotNil() {
         func f(o object: Thing) -> () throws -> Int {
-            return { throw TestError.error }
+            return { throw TestError() }
         }
 
         XCTAssertThrowsError(try weakify(object, f)())
@@ -277,7 +273,7 @@ class WeakifyTest: XCTestCase {
 
     func testUThrowsToVWillThrowIfNotNil() {
         func f(o object: Thing) -> (Int) throws -> String {
-            return { _ in throw TestError.error }
+            return { _ in throw TestError() }
         }
 
         XCTAssertThrowsError(try weakify(object, f)(123))
@@ -361,7 +357,7 @@ class WeakifyTest: XCTestCase {
 
     func testUasVThrowsWillThrowIfNotNil() {
         func f(o object: Thing) -> (Int?) throws -> Void {
-            return { _ in throw TestError.error }
+            return { _ in throw TestError() }
         }
 
         XCTAssertThrowsError(try weakify(object, f)("123"))

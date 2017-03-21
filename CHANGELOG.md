@@ -1,5 +1,8 @@
 # Changelog
 
+* 0.4.0
+ * Removed swift 2 support
+
 * 0.3.0
  * Updated to support building with Xcode 8/Swift 3 (still supports Xcode 7.3/Swift 2.2 for now as well)
 

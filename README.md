@@ -82,6 +82,7 @@ may be applied to a function that accepts an optional value. The resulting closu
 
 ## Requirements
 
+* 0.4.0 is supported on Xcode 8/Swift 3
 * 0.3.0 is supported on Xcode 8/Swift 3, or on Xcode 7.3/Swift 2.2+
 * 0.2.3 is supported on Xcode 8/Swift 2.3, or on Xcode 7/Swift 2.x
 * 0.1.3 is supported on Xcode 6.3+/Swift 1.2
@@ -94,8 +95,8 @@ may be applied to a function that accepts an optional value. The resulting closu
 Weakify is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
-# Swift 2.2/3.x:
-pod "Weakify", "~> 0.3.0"
+# Swift 3.x:
+pod "Weakify", "~> 0.4.0"
 
 # Swift 2.x:
 pod "Weakify", "~> 0.2.3"
@@ -104,15 +105,13 @@ pod "Weakify", "~> 0.2.3"
 pod "Weakify", "~> 0.1.3"
 ```
 
-Note: Weakify 0.3.0 can be built simultaneously with swift 2.2+ and Swift 3 using CocoaPods. This support may be removed in a future release.
-
 ### Carthage
 
 Weakify can be integrated with [Carthage](https://github.com/Carthage/Carthage). Add the following to your Cartfile to use it:
 
 ```
 # Swift 3:
-github "klundberg/Weakify" ~> 0.3.0
+github "klundberg/Weakify" ~> 0.4.0
 
 # Swift 2:
 github "klundberg/Weakify" ~> 0.2.3
@@ -121,14 +120,12 @@ github "klundberg/Weakify" ~> 0.2.3
 github "klundberg/Weakify" ~> 0.1.3
 ```
 
-Note: Unlike with CocoaPods, if you are using Weakify in a Swift 2 project, you must use Weakify 0.2.3,
-
 ### Swift Package Manager
 
 Add the following line to your dependencies list in your `Package.swift` file (altering the version as appropriate for your target swift version):
 
 ```
-.Package(url: "https://github.com/klundberg/weakify.git", versions:Version(0,3,0)..<Version(0,4,0)),
+.Package(url: "https://github.com/klundberg/weakify.git", versions:Version(0,4,0)..<Version(0,5,0)),
 ```
 
 ### Manual installation
