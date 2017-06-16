@@ -1,4 +1,4 @@
-//  Copyright (c) 2015-2016 Kevin Lundberg. See LICENSE file for more info
+//  Copyright (c) 2015-2017 Kevin Lundberg. See LICENSE file for more info
 
 //! Project version number for Weakify.
 extern double WeakifyVersionNumber;

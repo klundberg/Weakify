@@ -1,4 +1,4 @@
-//  Copyright © 2016 Kevin Lundberg. See LICENSE file for more information
+//  Copyright © 2017 Kevin Lundberg. See LICENSE file for more information
 
 import PackageDescription
 
