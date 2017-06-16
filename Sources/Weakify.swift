@@ -28,6 +28,8 @@ public func weakify <T: AnyObject>(_ owner: T, _ f: @escaping (T) throws -> Void
 }
 #endif
 
+// MARK: - (T) -> (_) -> ()
+
 /// May be applied to any method that takes no arguments and returns none. The resulting closure can accept an argument which will simply be ignored (useful in cases like `NSNotificationCenter` when you don't care about the `notification` argument), or the type may also represent `Void`, meaning no input arguments are necessary.
 ///
 /// - Parameters:

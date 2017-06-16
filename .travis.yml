@@ -1,7 +1,7 @@
 # references:
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
-osx_image: xcode8.2
+osx_image: xcode8.3
 language: objective-c
 
 env:
@@ -9,9 +9,6 @@ env:
 - DESTINATION="platform=iOS Simulator,name=iPhone SE"
 - DESTINATION="platform=tvOS Simulator,name=Apple TV 1080p"
 - DESTINATION=""
-
-before_install:
-- xcrun simctl delete DB794781-65A7-4884-8D00-AAC3CBD39A44 # workaround for https://github.com/travis-ci/travis-ci/issues/7031
 
 script:
 - if [[ $DESTINATION = "" ]]; then swift test; else set -o pipefail && xcodebuild -scheme Weakify -destination "$DESTINATION" test analyze | xcpretty -c; fi
