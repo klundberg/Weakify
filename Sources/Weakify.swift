@@ -1,7 +1,5 @@
 //  Copyright (c) 2015-2017 Kevin Lundberg. See LICENSE file for more info
 
-#if swift(>=4.0)
-
 // MARK: - (T) -> () -> ()
     
 public func weakify <T: AnyObject>(_ owner: T, _ f: @escaping (T) -> () -> Void) -> () -> Void {
@@ -29,7 +27,6 @@ public func weakify <T: AnyObject>(_ owner: T, _ f: @escaping (T) throws -> Void
         return try owner.map { try f($0) }
     }
 }
-#endif
 
 // MARK: - (T) -> (_) -> ()
 
