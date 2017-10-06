@@ -22,5 +22,10 @@ Pod::Spec.new do |s|
 
   s.test_spec 'Tests' do |test_spec|
     test_spec.source_files = 'Tests/WeakifyTests/*.swift'
+    test_spec.platforms = {
+        :ios => "8.0",
+        :osx => "10.9",
+        :tvos => "9.0"
+    }
   end
 end
