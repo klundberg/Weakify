@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0076B4961B8137070012CCD8 /* Weakify.h in Headers */ = {isa = PBXBuildFile; fileRef = 0076B4951B8137070012CCD8 /* Weakify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0076B4B31B8138150012CCD8 /* Weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076B4B21B8138150012CCD8 /* Weakify.swift */; };
 		79238E8D1D5D53EE00DFCCEC /* WeakifyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79238E8C1D5D53EE00DFCCEC /* WeakifyTest.swift */; };
 		795D9DC11B968D1A00C428E4 /* Weakify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0076B4901B8137070012CCD8 /* Weakify.framework */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		0076B4901B8137070012CCD8 /* Weakify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Weakify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0076B4941B8137070012CCD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0076B4951B8137070012CCD8 /* Weakify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weakify.h; sourceTree = "<group>"; };
 		0076B49B1B8137070012CCD8 /* Weakify-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weakify-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0076B4A11B8137070012CCD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0076B4AC1B8137690012CCD8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -82,11 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				0076B4941B8137070012CCD8 /* Info.plist */,
-				0076B4951B8137070012CCD8 /* Weakify.h */,
 				0076B4B21B8138150012CCD8 /* Weakify.swift */,
 			);
 			name = Weakify;
-			path = Sources;
+			path = Sources/Weakify;
 			sourceTree = "<group>";
 		};
 		0076B49F1B8137070012CCD8 /* WeakifyTests */ = {
@@ -120,7 +117,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0076B4961B8137070012CCD8 /* Weakify.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +360,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Weakify/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.$(PRODUCT_NAME:rfc1034identifier)";
@@ -382,7 +378,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Weakify/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.klundberg.$(PRODUCT_NAME:rfc1034identifier)";
