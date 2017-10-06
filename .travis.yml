@@ -12,7 +12,7 @@ env:
 
 script:
 - if [[ $DESTINATION = "" ]]; then swift test; else set -o pipefail && xcodebuild -scheme Weakify -destination "$DESTINATION" test analyze | xcpretty -c; fi
-- pod lib lint --quick
+- pod lib lint --quick --skip-tests
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
