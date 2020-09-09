@@ -6,6 +6,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/Weakify.svg?style=flat)](http://cocoapods.org/pods/Weakify)
 [![Platform](https://img.shields.io/cocoapods/p/Weakify.svg?style=flat)](http://cocoapods.org/pods/Weakify)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fklundberg%2FWeakify%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/klundberg/Weakify)
 
 ## How it works
 
