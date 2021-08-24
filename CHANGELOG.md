@@ -1,5 +1,8 @@
 # Changelog
 
+* 0.6.0
+ * Build with Xcode 12/swift 5.1
+
 * 0.4.0
  * Removed swift 2 support
 
